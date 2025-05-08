@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Apply for a new employee computer">c4e1b6be839562101d78a370ceaad317</sc_cat_item>
+        <sc_category display_value="Hardware">d258b953c611227a0146101fb1be7c31</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 02:13:59</sys_created_on>
+        <sys_id>da03befe839562101d78a370ceaad376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hardware.Apply for a new employee computer</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sc_cat_item_category_da03befe839562101d78a370ceaad376</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 02:13:59</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>bc6de7f8dbaef118b1eb9027c59619ec</instance_id>
+        <instance_name>dev211123</instance_name>
+        <name>sc_cat_item_category_da03befe839562101d78a370ceaad376</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Apply for a new employee computer">c4e1b6be839562101d78a370ceaad317</sc_cat_item><sc_category display_value="Hardware">d258b953c611227a0146101fb1be7c31</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-08 02:13:59</sys_created_on><sys_id>da03befe839562101d78a370ceaad376</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Hardware.Apply for a new employee computer</sys_name><sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package><sys_policy/><sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope><sys_update_name>sc_cat_item_category_da03befe839562101d78a370ceaad376</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-08 02:13:59</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-2087689750</payload_hash>
+        <record_name>Hardware.Apply for a new employee computer</record_name>
+        <reverted_from/>
+        <source>87213a3e839562101d78a370ceaad3ea</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 02:13:59</sys_created_on>
+        <sys_id>1e03befe839562101d78a370ceaad37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196adabcd7c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 02:13:59</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>1203befef39562105381773f6dfb717a</update_guid>
+        <update_guid_history>1203befef39562105381773f6dfb717a:-2087689750</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Hardware.Apply for a new employee computer">68c30b36831962101d78a370ceaad322</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-08 03:27:03</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>972552deee2b4c809d1eeb91e6b84000</sys_id>
+        <sys_metadata>da03befe839562101d78a370ceaad376</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hardware.Apply for a new employee computer</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_da03befe839562101d78a370ceaad376</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_da03befe839562101d78a370ceaad376">1e03befe839562101d78a370ceaad37a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-08 03:27:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
