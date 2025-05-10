@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Apply for a new employee computer">c4e1b6be839562101d78a370ceaad317</cat_item>
+        <cat_item display_value="Copy of Apply for a new employee computer">fbdeb62b83d166101d78a370ceaad36b</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -10,7 +10,7 @@
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
-        <default_value/>
+        <default_value>think_pad</default_value>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -38,18 +38,18 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>requested_for</name>
+        <name>computer_model</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>100</order>
+        <order>200</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>requested_for</question_text>
+        <question_text>Select Computer Model</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -57,7 +57,7 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table/>
-        <reference>sys_user</reference>
+        <reference/>
         <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
@@ -77,20 +77,20 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-08 02:45:07</sys_created_on>
-        <sys_id>4b4972f683d562101d78a370ceaad36a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>requested_for</sys_name>
+        <sys_created_on>2025-05-10 11:01:09</sys_created_on>
+        <sys_id>44eeba2b83d166101d78a370ceaad374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Select Computer Model</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
-        <sys_update_name>item_option_new_4b4972f683d562101d78a370ceaad36a</sys_update_name>
+        <sys_update_name>item_option_new_44eeba2b83d166101d78a370ceaad374</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-10 08:30:31</sys_updated_on>
+        <sys_updated_on>2025-05-10 11:01:09</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>31</type>
+        <type>5</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=4b4972f683d562101d78a370ceaad36a"/>
-    <fx_price action="delete_multiple" query="id=4b4972f683d562101d78a370ceaad36a"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=44eeba2b83d166101d78a370ceaad374"/>
+    <fx_price action="delete_multiple" query="id=44eeba2b83d166101d78a370ceaad374"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="CNY">CNY</currency>
         <field>price_if_checked</field>
-        <id>4b4972f683d562101d78a370ceaad36a</id>
+        <id>44eeba2b83d166101d78a370ceaad374</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-08 02:45:07</sys_created_on>
-        <sys_id>622ab63a83d562101d78a370ceaad37f</sys_id>
+        <sys_created_on>2025-05-10 11:01:09</sys_created_on>
+        <sys_id>44eeba2b83d166101d78a370ceaad388</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-08 02:45:07</sys_updated_on>
+        <sys_updated_on>2025-05-10 11:01:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="CNY">CNY</currency>
         <field>rec_price_if_checked</field>
-        <id>4b4972f683d562101d78a370ceaad36a</id>
+        <id>44eeba2b83d166101d78a370ceaad374</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-08 02:45:07</sys_created_on>
-        <sys_id>e62ab63a83d562101d78a370ceaad37e</sys_id>
+        <sys_created_on>2025-05-10 11:01:09</sys_created_on>
+        <sys_id>c8eeba2b83d166101d78a370ceaad387</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-08 02:45:07</sys_updated_on>
+        <sys_updated_on>2025-05-10 11:01:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

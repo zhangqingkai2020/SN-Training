@@ -14,7 +14,7 @@
         <description/>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
-        <flow_designer_flow display_value="New Employee Computer Request Workflow">d7c89c47839d62101d78a370ceaad360</flow_designer_flow>
+        <flow_designer_flow display_value="New Employee Computer Request Workflow Task">7e33f6ab839166101d78a370ceaad380</flow_designer_flow>
         <fulfillment_automation_level>unspecified</fulfillment_automation_level>
         <group/>
         <hide_sp>false</hide_sp>
@@ -29,7 +29,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Apply for a new employee computer</name>
+        <name>Copy of Apply for a new employee computer</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>true</no_cart_v2>
@@ -47,7 +47,7 @@
         <ordered_item_link/>
         <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
         <picture/>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=c4e1b6be839562101d78a370ceaad317&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=fbdeb62b83d166101d78a370ceaad36b&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
@@ -58,50 +58,50 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <short_description>Apply for a new employee computer</short_description>
+        <short_description>Copy of Apply for a new employee computer</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state>published</state>
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-08 02:12:35</sys_created_on>
-        <sys_id>c4e1b6be839562101d78a370ceaad317</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>Apply for a new employee computer</sys_name>
+        <sys_created_on>2025-05-10 11:01:08</sys_created_on>
+        <sys_id>fbdeb62b83d166101d78a370ceaad36b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Copy of Apply for a new employee computer</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
-        <sys_update_name>sc_cat_item_c4e1b6be839562101d78a370ceaad317</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-05-10 08:30:31</sys_updated_on>
+        <sys_update_name>sc_cat_item_fbdeb62b83d166101d78a370ceaad36b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-10 11:01:34</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>17</version>
+        <version>19</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
         <workflow/>
     </sc_cat_item>
-    <sys_translated_text action="delete_multiple" query="documentkey=c4e1b6be839562101d78a370ceaad317"/>
-    <fx_price action="delete_multiple" query="id=c4e1b6be839562101d78a370ceaad317"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=fbdeb62b83d166101d78a370ceaad36b"/>
+    <fx_price action="delete_multiple" query="id=fbdeb62b83d166101d78a370ceaad36b"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="CNY">CNY</currency>
         <field>price</field>
-        <id>c4e1b6be839562101d78a370ceaad317</id>
+        <id>fbdeb62b83d166101d78a370ceaad36b</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-08 02:12:36</sys_created_on>
-        <sys_id>4eb276fe839562101d78a370ceaad3f2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-05-10 11:01:08</sys_created_on>
+        <sys_id>37deb62b83d166101d78a370ceaad371</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-08 02:12:36</sys_updated_on>
+        <sys_updated_on>2025-05-10 11:01:10</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>
@@ -109,16 +109,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>recurring_price</field>
-        <id>c4e1b6be839562101d78a370ceaad317</id>
+        <id>fbdeb62b83d166101d78a370ceaad36b</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-08 02:12:36</sys_created_on>
-        <sys_id>0ab276fe839562101d78a370ceaad3f4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-05-10 11:01:08</sys_created_on>
+        <sys_id>7bdeba2b83d166101d78a370ceaad355</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-08 02:12:36</sys_updated_on>
+        <sys_updated_on>2025-05-10 11:01:10</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>
