@@ -36,21 +36,22 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>The computer you requested is out of stock. Please select again.</p>]]></message_html>
+        <message_html><![CDATA[<p>Dear ${opened_by}</p>
+<p>The computer you requested is out of stock. Please select another model.</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Send Rejected To Manager</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields/>
+        <recipient_fields>requested_for,opened_by</recipient_fields>
         <recipient_groups/>
-        <recipient_users>6816f79cc0a8016401c5a33be04be441</recipient_users>
+        <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Rejected</subject>
+        <subject>${number} was Rejected</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -58,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d62334383dda2101d78a370ceaad33b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Send Rejected To Manager</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -66,7 +67,7 @@
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sysevent_email_action_7d62334383dda2101d78a370ceaad33b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-09 01:34:09</sys_updated_on>
+        <sys_updated_on>2025-05-10 04:39:32</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

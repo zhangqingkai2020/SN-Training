@@ -36,7 +36,9 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>ALL</p>]]></message_html>
+        <message_html><![CDATA[<p>Dear All</p>
+<p>The computer application has been completed. If you have any questions, please contact IT Support. Thank you.</p>
+<p>Have a good day！</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Send To ALL</name>
@@ -45,7 +47,7 @@
         <push_message_only>false</push_message_only>
         <recipient_fields/>
         <recipient_groups/>
-        <recipient_users>6816f79cc0a8016401c5a33be04be441</recipient_users>
+        <recipient_users>d2f4b463831926101d78a370ceaad3f9,bc360527835926101d78a370ceaad3e7,46d44a23a9fe19810012d100cca80666</recipient_users>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
@@ -58,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b6f57bc383dda2101d78a370ceaad34b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Send To ALL</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -66,7 +68,7 @@
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sysevent_email_action_b6f57bc383dda2101d78a370ceaad34b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-09 01:46:12</sys_updated_on>
+        <sys_updated_on>2025-05-10 03:02:59</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
