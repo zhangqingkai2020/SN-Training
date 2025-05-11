@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="tabs">19e94b63831566101d78a370ceaad3f0</catalog_item>
+        <catalog_variable>IO:b96c47ab831566101d78a370ceaad3c4</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-11 05:53:50</sys_created_on>
+        <sys_id>09124bfb8395a6101d78a370ceaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>variable1_tab2</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_09124bfb8395a6101d78a370ceaad3bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-11 05:53:50</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make variable 2 in tab 2 Mandatory">f8309bef831566101d78a370ceaad3d9</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>variable1_tab2</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=09124bfb8395a6101d78a370ceaad3bb"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>bc6de7f8dbaef118b1eb9027c59619ec</instance_id>
+        <instance_name>dev211123</instance_name>
+        <name>catalog_ui_policy_action_09124bfb8395a6101d78a370ceaad3bb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="tabs">19e94b63831566101d78a370ceaad3f0</catalog_item><catalog_variable>IO:b96c47ab831566101d78a370ceaad3c4</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-11 05:53:50</sys_created_on><sys_id>09124bfb8395a6101d78a370ceaad3bb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>variable1_tab2</sys_name><sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package><sys_policy/><sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope><sys_update_name>catalog_ui_policy_action_09124bfb8395a6101d78a370ceaad3bb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-11 05:53:50</sys_updated_on><table/><ui_policy display_value="Make variable 2 in tab 2 Mandatory">f8309bef831566101d78a370ceaad3d9</ui_policy><value/><value_action>ignore</value_action><variable>variable1_tab2</variable><variable_set/><visible>true</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=09124bfb8395a6101d78a370ceaad3bb"/></record_update>]]></payload>
+        <payload_hash>113559215</payload_hash>
+        <record_name>variable1_tab2</record_name>
+        <reverted_from/>
+        <source>308643e3831566101d78a370ceaad31e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-11 05:53:50</sys_created_on>
+        <sys_id>c02287fb8395a6101d78a370ceaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196bde826d60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-11 05:53:50</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>c42287fb8995a6104fa7a0f56385e09e</update_guid>
+        <update_guid_history>c42287fb8995a6104fa7a0f56385e09e:113559215</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="variable1_tab2">66b4c3ff8395a6101d78a370ceaad3be</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-11 06:05:12</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>01d9c3ff385d4af48967b1d2435061c4</sys_id>
+        <sys_metadata>09124bfb8395a6101d78a370ceaad3bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>variable1_tab2</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_09124bfb8395a6101d78a370ceaad3bb</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_09124bfb8395a6101d78a370ceaad3bb">c02287fb8395a6101d78a370ceaad39f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-11 06:05:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

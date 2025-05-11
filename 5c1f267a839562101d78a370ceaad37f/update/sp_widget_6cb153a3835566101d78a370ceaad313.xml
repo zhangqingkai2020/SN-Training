@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope) {
+    /* widget controller */
+    var c = this;
+	
+		//g_form is avaiable via the page from $scope. Making it shorter here.
+    var gform = $scope.page.g_form;
+	
+	  c.steps = ['Step1', 'Step2', 'Step3', 'Step4', 'Step5'];
+    c.currentStep = 0;
+
+    c.selectStep = function(index) {
+      c.currentStep = index;
+		  gform.setValue('current_section', index+1);
+    }
+	
+	
+	
+
+
+
+    $scope.setTabIndex = function(index, $event) {
+        var oldValue = gform.getValue('current_section');
+        if (index == '2') {
+            mandatoryCheck('variable2_tab1', oldValue, index, $event);
+            return;
+        }
+
+        gform.setValue('current_section', index);
+        $event.target.classList.remove('btn-default');
+        $event.target.classList.add('btn-primary');
+		    setActiveButton();
+    }
+
+    function setActiveButton(){
+		var activeTab = gform.getValue('current_section');
+		$('[data-tab-index="' + activeTab + '"]').removeClass('btn-default').addClass('btn-primary');
+
+		$('[data-tab-index]').filter(function(){
+			return $(this).attr('data-tab-index') != activeTab;
+		}).removeClass('btn-primary').addClass('btn-default');
+
+	}
+
+    function mandatoryCheck(variableName, oldValue, newValue, $event) {
+        if (gform.isMandatory(variableName) && gform.getValue(variableName) == "") {
+            gform.showErrorBox(variableName, "Populate Mandatory field before moving on");
+            gform.setValue('current_section', oldValue)
+            return;
+        }
+
+        gform.setValue('current_section', newValue);
+        $event.target.classList.remove('btn-default');
+        $event.target.classList.add('btn-primary');
+		    setActiveButton();
+    }
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/*.step-tabs {
+  font-family: sans-serif;
+  margin: 20px;
+}*/
+
+.steps {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Home 图标项 */
+.steps .home-step {
+  flex: 0 0 auto;               /* 不自动拉伸 */
+  padding: 10px 5px;              /* 控制左右空隙 */
+  background: #f9f9f9;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;              /* 避免太小 */
+  height: 100%;
+}
+
+.steps .home-step img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.steps li {
+  position: relative;
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* 外轮廓箭头（底层灰色） */
+.steps li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-left: 20px solid #ccc;  /* 这个就是“外线颜色” */
+  z-index: 1;
+}
+
+/* 内容箭头（内层背景） */
+.steps li::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: -19px;
+  width: 0;
+  height: 0;
+  border-top: 21px solid transparent;
+  border-bottom: 21px solid transparent;
+  border-left: 19px solid #f9f9f9; /* 内部背景色 */
+  z-index: 2;
+}
+
+/* 激活步骤箭头背景色 */
+.steps li.active::after {
+  border-left-color: #0b48d1;
+}
+
+/* 激活步骤本体背景色 */
+.steps li.active {
+  background-color: #0b48d1;
+  color: #fff;
+}
+
+.steps li:last-child {
+  border-right: none;
+}
+
+.steps li:last-child::after {
+  display: none;
+}
+
+.step-content {
+  padding: 20px;
+  border: 0px solid #ccc;
+  border-top: none;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>SC Itme Tab C</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-10 12:27:52</sys_created_on>
+        <sys_id>6cb153a3835566101d78a370ceaad313</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>SC Itme Tab C</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sp_widget_6cb153a3835566101d78a370ceaad313</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-11 09:24:51</sys_updated_on>
+        <template><![CDATA[<!--<div>
+  <button ng-click="setTabIndex('1', $event)" class="btn btn-primary" data-tab-index="1">Tab 1</button>
+  <button ng-click="setTabIndex('2', $event)" class="btn btn-default" data-tab-index="2">Tab 2</button>
+</div>-->
+
+<div class="step-tabs">
+  <ul class="steps">
+      <li class="home-step" ng-click="c.selectStep(0)">
+    <img src="https://img.icons8.com/ios-filled/24/000000/home.png" alt="Home">
+  </li>
+    
+    <li ng-repeat="step in c.steps" 
+        ng-class="{'active': c.currentStep === $index}" 
+        ng-click="c.selectStep($index)">
+      <span>{{step}}</span>
+    </li>
+  </ul>
+
+  <!--<div class="step-content">
+    <div ng-if="c.currentStep === 0">内容：Step1</div>
+    <div ng-if="c.currentStep === 1">内容：Step2</div>
+    <div ng-if="c.currentStep === 2">内容：Step3</div>
+    <div ng-if="c.currentStep === 3">内容：Step4</div>
+    <div ng-if="c.currentStep === 4">内容：Step5</div>
+  </div>-->
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6cb153a3835566101d78a370ceaad313</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-10 12:27:51</sys_created_on>
+        <sys_id>0eb2172f831566101d78a370ceaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-10 12:27:51</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

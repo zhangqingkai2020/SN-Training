@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="tabs">19e94b63831566101d78a370ceaad3f0</sc_cat_item>
+        <sc_category display_value="Office">109cdff8c6112276003b17991a09ad65</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-10 11:50:08</sys_created_on>
+        <sys_id>dd1a0fe7831566101d78a370ceaad30a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Office.tabs</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sc_cat_item_category_dd1a0fe7831566101d78a370ceaad30a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-10 11:50:08</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

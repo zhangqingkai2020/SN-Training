@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="tabs">19e94b63831566101d78a370ceaad3f0</catalog_item>
+        <catalog_variable>IO:ca7c83eb831566101d78a370ceaad335</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-11 04:01:04</sys_created_on>
+        <sys_id>033866fb8315a6101d78a370ceaad389</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>variable2_tab2</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_033866fb8315a6101d78a370ceaad389</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-05-11 05:01:07</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make variable 2 in tab 2 Mandatory">f8309bef831566101d78a370ceaad3d9</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>variable2_tab2</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=033866fb8315a6101d78a370ceaad389"/>
+</record_update>
