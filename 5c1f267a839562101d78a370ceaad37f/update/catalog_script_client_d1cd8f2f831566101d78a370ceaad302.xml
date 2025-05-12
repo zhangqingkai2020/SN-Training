@@ -25,21 +25,97 @@ function onChange(control, oldValue, newValue, isLoading) {
     }
 
     if (newValue == '0' || newValue == '1') {
-       //display variables for tab 1
+        //display variables for tab 1
         g_form.setDisplay('variable1_tab1', true);
         g_form.setDisplay('variable2_tab1', true);
 
         //variables that should not dipslay on tab 1
         g_form.setDisplay('variable1_tab2', false);
         g_form.setDisplay('variable2_tab2', false);
+
+		g_form.setDisplay('variable1_tab3', false);
+        g_form.setDisplay('variable2_tab3', false);
+
+		g_form.setDisplay('variable1_tab4', false);
+        g_form.setDisplay('variable2_tab4', false);
+
+		g_form.setDisplay('variable1_tab5', false);
+        g_form.setDisplay('variable2_tab5', false);
+
     }
 
     if (newValue == '2') {
-       //display variables for tab 2
+        //display variables for tab 2
         g_form.setDisplay('variable1_tab2', true);
         g_form.setDisplay('variable2_tab2', true);
 
-       //variables that should not display on tab 2
+        //variables that should not display on tab 2
+        g_form.setDisplay('variable1_tab5', false);
+        g_form.setDisplay('variable2_tab5', false);
+
+        g_form.setDisplay('variable1_tab4', false);
+        g_form.setDisplay('variable2_tab4', false);
+
+		g_form.setDisplay('variable1_tab3', false);
+        g_form.setDisplay('variable2_tab3', false);
+
+        g_form.setDisplay('variable1_tab1', false);
+        g_form.setDisplay('variable2_tab1', false);
+    }
+
+    if (newValue == '3') {
+        //display variables for tab 2	
+        g_form.setDisplay('variable1_tab3', true);
+        g_form.setDisplay('variable2_tab3', true);
+
+        //variables that should not display on tab 2
+        g_form.setDisplay('variable1_tab5', false);
+        g_form.setDisplay('variable2_tab5', false);
+
+        g_form.setDisplay('variable1_tab4', false);
+        g_form.setDisplay('variable2_tab4', false);
+
+        g_form.setDisplay('variable1_tab2', false);
+        g_form.setDisplay('variable2_tab2', false);
+
+        g_form.setDisplay('variable1_tab1', false);
+        g_form.setDisplay('variable2_tab1', false);
+    }
+	
+    if (newValue == '4') {
+        //display variables for tab 2	
+        g_form.setDisplay('variable1_tab4', true);
+        g_form.setDisplay('variable2_tab4', true);
+
+        //variables that should not display on tab 2
+        g_form.setDisplay('variable1_tab5', false);
+        g_form.setDisplay('variable2_tab5', false);
+
+        g_form.setDisplay('variable1_tab3', false);
+        g_form.setDisplay('variable2_tab3', false);
+
+        g_form.setDisplay('variable1_tab2', false);
+        g_form.setDisplay('variable2_tab2', false);
+
+        g_form.setDisplay('variable1_tab1', false);
+        g_form.setDisplay('variable2_tab1', false);
+    }
+
+    if (newValue == '5') {
+        //display variables for tab 2	
+        g_form.setDisplay('variable1_tab5', true);
+        g_form.setDisplay('variable2_tab5', true);
+
+        //variables that should not display on tab 2
+        g_form.setDisplay('variable1_tab4', false);
+        g_form.setDisplay('variable2_tab4', false);
+
+        g_form.setDisplay('variable1_tab3', false);
+        g_form.setDisplay('variable2_tab3', false);
+
+        g_form.setDisplay('variable1_tab2', false);
+        g_form.setDisplay('variable2_tab2', false);
+
         g_form.setDisplay('variable1_tab1', false);
         g_form.setDisplay('variable2_tab1', false);
     }
@@ -51,7 +127,7 @@ function onChange(control, oldValue, newValue, isLoading) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d1cd8f2f831566101d78a370ceaad302</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Variable Controller</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -59,7 +135,7 @@ function onChange(control, oldValue, newValue, isLoading) {
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>catalog_script_client_d1cd8f2f831566101d78a370ceaad302</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-11 05:36:41</sys_updated_on>
+        <sys_updated_on>2025-05-12 00:59:57</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

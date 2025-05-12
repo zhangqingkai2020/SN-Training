@@ -22,6 +22,18 @@
 function onLoad() {
     g_form.setDisplay('variable1_tab1', true);
     g_form.setDisplay('variable2_tab1', true);
+
+    g_form.setDisplay('variable1_tab2', false);
+    g_form.setDisplay('variable2_tab2', false);
+
+    g_form.setDisplay('variable1_tab3', false);
+    g_form.setDisplay('variable2_tab3', false);
+
+    g_form.setDisplay('variable1_tab4', false);
+    g_form.setDisplay('variable2_tab4', false);
+
+    g_form.setDisplay('variable1_tab5', false);
+    g_form.setDisplay('variable2_tab5', false);
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -29,7 +41,7 @@ function onLoad() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8e4d072f831566101d78a370ceaad346</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Initial Display</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -37,7 +49,7 @@ function onLoad() {
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>catalog_script_client_8e4d072f831566101d78a370ceaad346</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-11 05:39:35</sys_updated_on>
+        <sys_updated_on>2025-05-12 01:03:57</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
