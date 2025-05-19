@@ -45,9 +45,9 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields/>
+        <recipient_fields>opened_by</recipient_fields>
         <recipient_groups/>
-        <recipient_users>d2f4b463831926101d78a370ceaad3f9</recipient_users>
+        <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
@@ -60,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ed647b0383dda2101d78a370ceaad3df</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Send Approved To Manager</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -68,7 +68,7 @@
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sysevent_email_action_ed647b0383dda2101d78a370ceaad3df</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-10 08:49:11</sys_updated_on>
+        <sys_updated_on>2025-05-14 07:16:10</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
