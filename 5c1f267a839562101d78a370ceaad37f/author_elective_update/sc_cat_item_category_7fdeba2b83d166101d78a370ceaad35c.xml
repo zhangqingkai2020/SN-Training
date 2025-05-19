@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Copy of Apply for a new employee computer">fbdeb62b83d166101d78a370ceaad36b</sc_cat_item>
+        <sc_category display_value="Office">109cdff8c6112276003b17991a09ad65</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-10 11:01:08</sys_created_on>
+        <sys_id>7fdeba2b83d166101d78a370ceaad35c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Office.Copy of Apply for a new employee computer</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sc_cat_item_category_7fdeba2b83d166101d78a370ceaad35c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-10 11:01:08</sys_updated_on>
+    </sc_cat_item_category>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sc_cat_item_category_7fdeba2b83d166101d78a370ceaad35c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Copy of Apply for a new employee computer">fbdeb62b83d166101d78a370ceaad36b</sc_cat_item>
+        <sc_category display_value="Office">109cdff8c6112276003b17991a09ad65</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-10 11:01:08</sys_created_on>
+        <sys_id>7fdeba2b83d166101d78a370ceaad35c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Office.Copy of Apply for a new employee computer</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sc_cat_item_category_7fdeba2b83d166101d78a370ceaad35c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-10 11:01:08</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>]]></payload>
+        <payload_hash>765256033</payload_hash>
+        <record_name>Office.Copy of Apply for a new employee computer</record_name>
+        <reverted_from/>
+        <source>45b622f0536122102429d2a0a0490ee8</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-14 06:28:01</sys_created_on>
+        <sys_id>46b6a2f0536122102429d2a0a0490ecd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196cd7a88c00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-14 06:28:01</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>06b6a2f03e612210818cb195e64e6acd</update_guid>
+        <update_guid_history>06b6a2f03e612210818cb195e64e6acd:765256033</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Office.Copy of Apply for a new employee computer">c99a3b1e53a562102429d2a0a0490e15</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 04:25:18</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>18978a273a2f40e6a6283ab991371969</sys_id>
+        <sys_metadata>7fdeba2b83d166101d78a370ceaad35c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Office.Copy of Apply for a new employee computer</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_7fdeba2b83d166101d78a370ceaad35c</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_7fdeba2b83d166101d78a370ceaad35c">46b6a2f0536122102429d2a0a0490ecd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 04:25:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

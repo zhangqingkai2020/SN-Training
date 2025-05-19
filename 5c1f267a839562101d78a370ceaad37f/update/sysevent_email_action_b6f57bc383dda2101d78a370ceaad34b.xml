@@ -36,13 +36,15 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Dear All<br><br></p>
+        <message_html><![CDATA[<p>Dear ${opened_by}<br>CC: Dear ${requested_for} , ${assigned_to}</p>
 <p>Requested for: ${requested_for}</p>
-<p>Configuration item(cmdb_ci):&nbsp;</p>
-<p>Configuration item(cmdb_ci) Model ID: ${cmdb_ci.model_id}<br><br></p>
+<p>Configuration item(configuration_item): ${configuration_item}</p>
+<p>Model ID: ${configuration_item.model_id}</p>
+<p>&nbsp;</p>
 <p>The computer application has been completed.</p>
 <p>If you have any questions, please contact IT Support. Thank you.</p>
-<p>Have a good day！</p>]]></message_html>
+<p>Have a good day！</p>
+<p>&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Send To ALL</name>
@@ -56,7 +58,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>ALL </subject>
+        <subject>${number}  was completed</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -64,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b6f57bc383dda2101d78a370ceaad34b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Send To ALL</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -72,7 +74,7 @@
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sysevent_email_action_b6f57bc383dda2101d78a370ceaad34b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-14 07:18:21</sys_updated_on>
+        <sys_updated_on>2025-05-19 06:14:06</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
