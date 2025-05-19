@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="DELETE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_1639325_sn_train.Create Train Event Fo</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>Create Train Event For Send Email</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:07:54</sys_created_on>
+        <sys_id>938f582e536962102429d2a0a0490e79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1639325_sn_train.Create Train Event Fo</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sysevent_register_938f582e536962102429d2a0a0490e79</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:07:54</sys_updated_on>
+        <table/>
+    </sysevent_register>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sysevent_register_938f582e536962102429d2a0a0490e79</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register"><sysevent_register action="INSERT_OR_UPDATE"><caller_access/><derived_priority>100</derived_priority><description/><event_name>x_1639325_sn_train.Create Train Event Fo</event_name><fired_by/><priority>100</priority><queue/><suffix>Create Train Event For Send Email</suffix><sys_class_name>sysevent_register</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-19 07:07:54</sys_created_on><sys_id>938f582e536962102429d2a0a0490e79</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1639325_sn_train.Create Train Event Fo</sys_name><sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package><sys_policy/><sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope><sys_update_name>sysevent_register_938f582e536962102429d2a0a0490e79</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-19 07:07:54</sys_updated_on><table/></sysevent_register></record_update>]]></payload>
+        <payload_hash>-1682109285</payload_hash>
+        <record_name>x_1639325_sn_train.Create Train Event Fo</record_name>
+        <reverted_from/>
+        <source>d7d458aa532962102429d2a0a0490e3d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:07:54</sys_created_on>
+        <sys_id>4fcf58ae532962102429d2a0a0490eda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196e75ed67a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:07:54</sys_updated_on>
+        <type>Event Registration</type>
+        <update_guid>03cf58ae3d296210b01e646b48b5d0da</update_guid>
+        <update_guid_history>03cf58ae3d296210b01e646b48b5d0da:-1682109285</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:09:29</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_register">sysevent_register</sys_db_object>
+        <sys_id>605ea2c205f647c9b466982aca5756c1</sys_id>
+        <sys_metadata>938f582e536962102429d2a0a0490e79</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1639325_sn_train.Create Train Event Fo</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>sysevent_register_938f582e536962102429d2a0a0490e79</sys_update_name>
+        <sys_update_version display_value="sysevent_register_938f582e536962102429d2a0a0490e79">4fcf58ae532962102429d2a0a0490eda</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:09:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

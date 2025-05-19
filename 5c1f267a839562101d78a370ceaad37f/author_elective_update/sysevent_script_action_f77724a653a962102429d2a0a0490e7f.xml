@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="DELETE">
+        <active>false</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_1639325_sn_train.SendEmail</event_name>
+        <name>XX</name>
+        <order>100</order>
+        <script/>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:42:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f77724a653a962102429d2a0a0490e7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>XX</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sysevent_script_action_f77724a653a962102429d2a0a0490e7f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:42:04</sys_updated_on>
+    </sysevent_script_action>
+    <sys_es_latest_script action="DELETE">
+        <id>f77724a653a962102429d2a0a0490e7f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:42:04</sys_created_on>
+        <sys_id>df97a46653a962102429d2a0a0490ec9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:42:04</sys_updated_on>
+        <table>sysevent_script_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sysevent_script_action_f77724a653a962102429d2a0a0490e7f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action"><sysevent_script_action action="INSERT_OR_UPDATE"><active>false</active><condition_script/><description/><event_name>x_1639325_sn_train.SendEmail</event_name><name>XX</name><order>100</order><script/><synchronous>false</synchronous><sys_class_name>sysevent_script_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-19 07:42:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f77724a653a962102429d2a0a0490e7f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>XX</sys_name><sys_overrides/><sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package><sys_policy/><sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope><sys_update_name>sysevent_script_action_f77724a653a962102429d2a0a0490e7f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-19 07:42:04</sys_updated_on></sysevent_script_action><sys_es_latest_script action="INSERT_OR_UPDATE"><id>f77724a653a962102429d2a0a0490e7f</id><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-19 07:42:04</sys_created_on><sys_id>df97a46653a962102429d2a0a0490ec9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-19 07:42:04</sys_updated_on><table>sysevent_script_action</table><use_es_latest>true</use_es_latest></sys_es_latest_script></record_update>]]></payload>
+        <payload_hash>1334252601</payload_hash>
+        <record_name>XX</record_name>
+        <reverted_from/>
+        <source>d7d458aa532962102429d2a0a0490e3d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:42:05</sys_created_on>
+        <sys_id>6397a4a653a962102429d2a0a0490edf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196e77e21550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:42:05</sys_updated_on>
+        <type>Script Action</type>
+        <update_guid>6797a4a6b7a9621045070f8085a1b7de</update_guid>
+        <update_guid_history>6797a4a6b7a9621045070f8085a1b7de:1334252601</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 07:52:46</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_script_action">sysevent_script_action</sys_db_object>
+        <sys_id>cf49f8db67754e78a5e96a11d38a7331</sys_id>
+        <sys_metadata>f77724a653a962102429d2a0a0490e7f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>XX</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>sysevent_script_action_f77724a653a962102429d2a0a0490e7f</sys_update_name>
+        <sys_update_version display_value="sysevent_script_action_f77724a653a962102429d2a0a0490e7f">6397a4a653a962102429d2a0a0490edf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 07:52:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
