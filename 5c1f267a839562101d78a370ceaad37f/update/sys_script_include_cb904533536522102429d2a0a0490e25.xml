@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1639325_sn_train.GeneratePDF</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GeneratePDF</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GeneratePDF = Class.create();
+GeneratePDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    generate: function() {
+        gs.info("== GeneratePDF 被调用 ==");
+        var html = "<html><body>";
+        html += "<h1>请求详情</h1>";
+        html += "<p><strong>编号:</strong>test00005</p>";
+        html += "<p><strong>描述:</strong>这时一个测试的PDF</p>";
+        html += "</body></html>";
+        gs.info("== GeneratePDF 被调用 ==11111111");
+        var v = new sn_pdfgeneratorutils.PDFGenerationAPI;
+        gs.info("== GeneratePDF 被调用 ==22222222");
+        //var result = v.convertToPDF(html, "sys_poll", "57af7aec73d423002728660c4cf6a71c", "myPDF");
+		var result = v.convertToPDF(html, "incident", "57af7aec73d423002728660c4cf6a71c", "myPDF");
+        gs.info("== GeneratePDF 被调用 ==" + JSON.stringify(result));
+        return JSON.stringify(result);
+
+
+    },
+    type: 'GeneratePDF'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 06:44:25</sys_created_on>
+        <sys_id>cb904533536522102429d2a0a0490e25</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>GeneratePDF</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_script_include_cb904533536522102429d2a0a0490e25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 13:04:17</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>cb904533536522102429d2a0a0490e25</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 06:44:24</sys_created_on>
+        <sys_id>3dc009bf532522102429d2a0a0490e31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 06:44:24</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

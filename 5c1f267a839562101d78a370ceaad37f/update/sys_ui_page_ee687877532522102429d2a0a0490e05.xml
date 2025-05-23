@@ -21,16 +21,42 @@
         alert("Update canceled.");
     }
 }
-]]></client_script>
+
+function generatePDF() {
+    var ga = new GlideAjax('GeneratePDF');
+    ga.addParam('sysparm_name', 'generate');
+    ga.getXMLAnswer(function(answer) {
+        var srtJson = JSON.parse(answer);
+        var attachmentId = srtJson.attachment_id;
+        if (srtJson.status === "success") {
+            var url = '/sys_attachment.do?sys_id=' + attachmentSysId;
+            window.open(url, '_blank');
+        } else {
+            alert('生成失败，请检查 PDF 配置。');
+        }
+    });
+}]]></client_script>
         <description/>
         <direct>false</direct>
         <endpoint>x_1639325_sn_train_ajax_confirm_test.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
-<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<j:jelly xmlns:j="jelly:core" xmlns:g="glide" xmlns:gs="jelly:glide" xmlns:g2="glide_v2">
     <g:ui_form>
-		<div>更新incident表的INC0009009这条记录</div>
+        <div>
+            <h1>上传PDF</h1>
+        </div>
+        <button onclick="generatePDF()">生成 PDF</button>
+        <div>
+            <h1>更新incident表的INC0009009这条记录的Short description这个字段</h1>
+        </div>
         <button onclick="showConfirm()">Update Field</button>
     </g:ui_form>
+	 <h3>Manage Attachments</h3>
+    <j:include page="attachments">
+      <j:param name="table" value="incident" />
+      <j:param name="sys_id" value="57af7aec73d423002728660c4cf6a71c" />
+    </j:include>
+
 </j:jelly>]]></html>
         <name>ajax_confirm_test</name>
         <processing_script/>
@@ -38,14 +64,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-23 06:10:01</sys_created_on>
         <sys_id>ee687877532522102429d2a0a0490e05</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>ajax_confirm_test</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_ui_page_ee687877532522102429d2a0a0490e05</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-23 06:31:16</sys_updated_on>
+        <sys_updated_on>2025-05-23 13:38:10</sys_updated_on>
     </sys_ui_page>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>ee687877532522102429d2a0a0490e05</id>
