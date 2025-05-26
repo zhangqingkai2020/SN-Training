@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category>general</category>
+        <client_script><![CDATA[function attachFiles(evt) {
+    var file = evt.target.files[0];
+    var filename = file.name;
+    var contentType = file.type;
+
+    // Read the file content (in a suitable format, e.g., base64)
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        var content = e.target.result;
+
+        // Use GlideSysAttachment to write the attachment
+        var attachment = new GlideSysAttachment();
+        var rec = new GlideRecord('incident'); // Replace with the table where the attachment should be linked
+        rec.get('57af7aec73d423002728660c4cf6a71c');
+        var agr = attachment.write(rec, filename, contentType, content);
+
+        // Handle the result (agr)
+        if (agr) {
+            // Attachment successfully uploaded
+            gs.addInfoMessage('Attachment uploaded successfully!');
+        } else {
+            // Handle upload error
+            gs.addErrorMessage('Failed to upload attachment!');
+        }
+    };
+    reader.readAsDataURL(file);
+}
+
+// Add an event listener to the file input
+var upFile = document.getElementById("myFile");
+upFile.addEventListener('change', attachFiles, false);]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1639325_sn_train_show_attachments_test.do</endpoint>
+        <html><![CDATA[<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:gs="jelly:glide" xmlns:g2="glide_v2">
+  <g:ui_form>
+    <h3>Attachment List Should Appear Below</h3>
+    <j:set var="record_id" value="${PARAMS.sys_id}" />
+    <g2:attachment_list table="incident" sys_id="${record_id}" />
+  </g:ui_form>
+</j:jelly>]]></html>
+        <name>show_attachments_test</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 13:41:46</sys_created_on>
+        <sys_id>142062b3532d22102429d2a0a0490e07</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>show_attachments_test</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_ui_page_142062b3532d22102429d2a0a0490e07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 15:47:31</sys_updated_on>
+    </sys_ui_page>
+    <sys_es_latest_script action="DELETE">
+        <id>142062b3532d22102429d2a0a0490e07</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 13:41:42</sys_created_on>
+        <sys_id>5e402633532d22102429d2a0a0490e46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 13:41:42</sys_updated_on>
+        <table>sys_ui_page</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sys_ui_page_142062b3532d22102429d2a0a0490e07</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function attachFiles(evt) {
+    var file = evt.target.files[0];
+    var filename = file.name;
+    var contentType = file.type;
+
+    // Read the file content (in a suitable format, e.g., base64)
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        var content = e.target.result;
+
+        // Use GlideSysAttachment to write the attachment
+        var attachment = new GlideSysAttachment();
+        var rec = new GlideRecord('incident'); // Replace with the table where the attachment should be linked
+        rec.get('57af7aec73d423002728660c4cf6a71c');
+        var agr = attachment.write(rec, filename, contentType, content);
+
+        // Handle the result (agr)
+        if (agr) {
+            // Attachment successfully uploaded
+            gs.addInfoMessage('Attachment uploaded successfully!');
+        } else {
+            // Handle upload error
+            gs.addErrorMessage('Failed to upload attachment!');
+        }
+    };
+    reader.readAsDataURL(file);
+}
+
+// Add an event listener to the file input
+var upFile = document.getElementById("myFile");
+upFile.addEventListener('change', attachFiles, false);]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_1639325_sn_train_show_attachments_test.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:gs="jelly:glide" xmlns:g2="glide_v2"&gt;
+  &lt;g:ui_form&gt;
+    &lt;h3&gt;Attachment List Should Appear Below&lt;/h3&gt;
+    &lt;j:set var="record_id" value="${PARAMS.sys_id}" /&gt;
+    &lt;g2:attachment_list table="incident" sys_id="${record_id}" /&gt;
+  &lt;/g:ui_form&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;show_attachments_test&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-23 13:41:46&lt;/sys_created_on&gt;&lt;sys_id&gt;142062b3532d22102429d2a0a0490e07&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;show_attachments_test&lt;/sys_name&gt;&lt;sys_package display_value="SN Training" source="x_1639325_sn_train"&gt;5c1f267a839562101d78a370ceaad37f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SN Training"&gt;5c1f267a839562101d78a370ceaad37f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_142062b3532d22102429d2a0a0490e07&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-23 15:47:31&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;142062b3532d22102429d2a0a0490e07&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-23 13:41:42&lt;/sys_created_on&gt;&lt;sys_id&gt;5e402633532d22102429d2a0a0490e46&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-23 13:41:42&lt;/sys_updated_on&gt;&lt;table&gt;sys_ui_page&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-545259583</payload_hash>
+        <record_name>show_attachments_test</record_name>
+        <reverted_from/>
+        <source>d7d458aa532962102429d2a0a0490e3d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 15:47:31</sys_created_on>
+        <sys_id>251db27753ad22102429d2a0a0490ec9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196fdd4012a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 15:47:31</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>a91db27718ad221064ef0a53dd56a7c8</update_guid>
+        <update_guid_history>a91db27718ad221064ef0a53dd56a7c8:-545259583,109c36f352ad22104b963bbeb7bfec42:-2100526058,6d0cf2b3faad2210c68fce34494122f7:499927818,8d1bb2b30dad22107a7318e0f614d4fe:-1818387022,59aab2b3d6ad2210f3b0f43add9bf33d:-968094024,389ab673d0ad2210a314d0c2f5d50624:-1736589308,c68a3a734aad2210e74c59393175e05b:-2132129635,7b6ab6730ead221060817ceca204661d:-1736589308,b95a327399ad22105732326f9039ccef:-1110772753,26e936735aad2210ca9dfd77dcc58c8f:534691976,fdc93abfe36d2210f603dc884b1a5090:-523325591,6ea9727310ad2210cc520d563fb85719:1919159882,54493abfcf6d22102c0f05591f77e839:1484777800,7d38327fc76d2210e6ec6bb6fd6394fc:1540117310,d0977abfab6d221064b33b4c8faa10c0:-1952585944,a887fefb5b6d22106960677dc6c0f657:-1573668175,e1d6763fbb6d2210f7c78939095bae19:207714489,c02676fb1f6d2210684e27b2c1e9c738:-1881344394,3814b6bb1e6d2210a30656b477c5e01f:-710825535,0e43f6ff582d2210ddb84619d645d76f:-663465242,e45136b7406d22101b5f5a61d05712b6:963901137,39d03ab34e6d221064f2dcdb8741042b:-517179300,47b6ae3b222d22105ea8b8d5063daff7:1032992085,9ca2ee37782d221049b03d35b8024a60:-499685019,e632aef3842d221009db7034a3e82c9a:-1710061904,5280a2f38d2d2210e1a7808d69afab9b:-442628585,7f4022f3842d2210e19f02727c1677be:2004466130</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-26 11:57:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>3effd4b8df5b4a209bb5d2a6b7b87040</sys_id>
+        <sys_metadata>142062b3532d22102429d2a0a0490e07</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>show_attachments_test</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>sys_ui_page_142062b3532d22102429d2a0a0490e07</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_142062b3532d22102429d2a0a0490e07">251db27753ad22102429d2a0a0490ec9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-26 11:57:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
