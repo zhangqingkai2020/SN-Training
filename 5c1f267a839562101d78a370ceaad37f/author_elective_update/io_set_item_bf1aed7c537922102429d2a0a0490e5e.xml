@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="Catalog item 3">59272178537922102429d2a0a0490eea</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-26 12:18:58</sys_created_on>
+        <sys_id>bf1aed7c537922102429d2a0a0490e5e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>asset_list.Catalog item 3</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>io_set_item_bf1aed7c537922102429d2a0a0490e5e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-26 12:18:58</sys_updated_on>
+        <variable_set display_value="asset_list">9cf9a1fc537922102429d2a0a0490ef8</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>io_set_item_bf1aed7c537922102429d2a0a0490e5e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="Catalog item 3">59272178537922102429d2a0a0490eea</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-26 12:18:58</sys_created_on><sys_id>bf1aed7c537922102429d2a0a0490e5e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>asset_list.Catalog item 3</sys_name><sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package><sys_policy/><sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope><sys_update_name>io_set_item_bf1aed7c537922102429d2a0a0490e5e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-26 12:18:58</sys_updated_on><variable_set display_value="asset_list">9cf9a1fc537922102429d2a0a0490ef8</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>1792821137</payload_hash>
+        <record_name>asset_list.Catalog item 3</record_name>
+        <reverted_from/>
+        <source>d7d458aa532962102429d2a0a0490e3d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-26 12:18:58</sys_created_on>
+        <sys_id>802aa5fc537922102429d2a0a0490e84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1970c8825ae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-26 12:18:58</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>842aa5fcdc792210b34e9c166dce8783</update_guid>
+        <update_guid_history>842aa5fcdc792210b34e9c166dce8783:1792821137</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="asset_list.Catalog item 3">784178c9533962102429d2a0a0490e43</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 02:49:01</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>15f371519d6144ceaf4d687419317419</sys_id>
+        <sys_metadata>bf1aed7c537922102429d2a0a0490e5e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asset_list.Catalog item 3</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>io_set_item_bf1aed7c537922102429d2a0a0490e5e</sys_update_name>
+        <sys_update_version display_value="io_set_item_bf1aed7c537922102429d2a0a0490e5e">802aa5fc537922102429d2a0a0490e84</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 02:49:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

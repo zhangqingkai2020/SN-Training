@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1639325_sn_train.ExcelParserUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ExcelParserUtil</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ExcelParserUtil = Class.create();
+ExcelParserUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    parseExcel: function() {
+        gs.info("ExcelParserUtil");
+        var attachmentId = this.getParameter('sysparm_attachment_id');
+        try {
+            var sa = new GlideSysAttachment();
+            var attachmentStream = sa.getContentStream(attachmentId); // 获取附件流
+            var parser = new sn_impex.GlideExcelParser();
+            parser.setSource(attachmentStream);
+            var list_sheet_name = parser.getSheetNames();
+            gs.info(" Sheet Names " + list_sheet_name.join(", "));
+            for (var i = 0; i < list_sheet_name.length; i++) {
+                parser.setSheetName(list_sheet_name[i]);
+                if (parser.parse()) {
+                    var headers = parser.getColumnHeaders();
+                    var header1 = headers[0];
+                    var header2 = headers[1];
+                    var header3 = headers[2];
+                    var result = [];
+                    while (parser.next()) {
+                        var row = parser.getRow();
+                        result.push({
+                            asset_name: row[header1],
+                            serial_number: row[header2],
+                            location: row[header3]
+                        });
+                    }
+                    gs.info("result=======" + JSON.stringify({
+                        status: 'success',
+                        rows: result
+                    }));
+                    parser.close();
+                    return JSON.stringify({
+                        status: 'success',
+                        rows: result
+                    });
+                } else {
+                    parser.close();
+                    return JSON.stringify({
+                        status: 'error',
+                        error: getErrorMessage()
+                    });
+                }
+            }
+        } catch (e) {
+            return JSON.stringify({
+                status: 'error',
+                error: e.message
+            });
+        }
+    },
+    type: 'ExcelParserUtil'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-26 13:17:58</sys_created_on>
+        <sys_id>9d36f1bc53b922102429d2a0a0490ebf</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>ExcelParserUtil</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_script_include_9d36f1bc53b922102429d2a0a0490ebf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 00:40:48</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9d36f1bc53b922102429d2a0a0490ebf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-26 13:17:58</sys_created_on>
+        <sys_id>04a775fc53b922102429d2a0a0490e27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-26 13:17:58</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
