@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_req_item</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>watch_list</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    // Add your code here
+	gs.info("2222222222222222");
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 14:12:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3700653d533566102429d2a0a0490e4f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>watch_list</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_script_3700653d533566102429d2a0a0490e4f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 14:48:20</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=3700653d533566102429d2a0a0490e4f"/>
+    <sys_es_latest_script action="DELETE">
+        <id>3700653d533566102429d2a0a0490e4f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 14:12:06</sys_created_on>
+        <sys_id>52c06df9533566102429d2a0a0490e6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 14:12:06</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sys_script_3700653d533566102429d2a0a0490e4f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;sc_req_item&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;watch_list&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    // Add your code here
+	gs.info("2222222222222222");
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-29 14:12:06&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3700653d533566102429d2a0a0490e4f&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;watch_list&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SN Training" source="x_1639325_sn_train"&gt;5c1f267a839562101d78a370ceaad37f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SN Training"&gt;5c1f267a839562101d78a370ceaad37f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_3700653d533566102429d2a0a0490e4f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-29 14:48:20&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3700653d533566102429d2a0a0490e4f"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;3700653d533566102429d2a0a0490e4f&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-29 14:12:06&lt;/sys_created_on&gt;&lt;sys_id&gt;52c06df9533566102429d2a0a0490e6b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-29 14:12:06&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1966937452</payload_hash>
+        <record_name>watch_list</record_name>
+        <reverted_from/>
+        <source>d7d458aa532962102429d2a0a0490e3d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 14:48:20</sys_created_on>
+        <sys_id>d51929f5537566102429d2a0a0490efa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1971c83f9750000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 14:48:20</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>991929f55275661059a7333dc85deaf9</update_guid>
+        <update_guid_history>991929f55275661059a7333dc85deaf9:1966937452,35676935e37566104a59d300b6ef4527:-1795141952,7237693561756610e9bb7207985ef2a3:1551601119,f66625357875661053ed14474b22e00f:122891190,b6162df1d9756610200af710e6eae842:-1939505725,0af5adb13775661038298fda0590da90:1649695580,01c2e1fdc735661061251a5df21838dc:-619813647,0ab1ed7d4735661040c68e503dea4cf3:204041614,a2c06d3dd43566105a1134ca55d331ec:1835344493</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 14:53:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>7aa1b28435dd479c8ec703f548e65310</sys_id>
+        <sys_metadata>3700653d533566102429d2a0a0490e4f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>watch_list</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent display_value="Sc Req Item">b1f8d0ef5ca312104f3496f8659cf6fc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>sys_script_3700653d533566102429d2a0a0490e4f</sys_update_name>
+        <sys_update_version display_value="sys_script_3700653d533566102429d2a0a0490e4f">d51929f5537566102429d2a0a0490efa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 14:53:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
