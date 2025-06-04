@@ -29,7 +29,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Catalog item 3</name>
+        <name>Catalog item 3 ExcelUpload</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -66,21 +66,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-26 12:07:05</sys_created_on>
         <sys_id>59272178537922102429d2a0a0490eea</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Catalog item 3</sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Catalog item 3 ExcelUpload</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sc_cat_item_59272178537922102429d2a0a0490eea</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-05-27 02:49:01</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 08:42:10</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>12</version>
+        <version>13</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
