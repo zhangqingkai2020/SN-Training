@@ -12,19 +12,21 @@
         <script><![CDATA[var GeneratePDF = Class.create();
 GeneratePDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
     generate: function() {
-        gs.info("== GeneratePDF 被调用 ==");
-        var html = "<html><body>";
-        html += "<h1>请求详情</h1>";
-        html += "<p><strong>编号:</strong>test00005</p>";
-        html += "<p><strong>描述:</strong>这时一个测试的PDF</p>";
-        html += "</body></html>";
-        gs.info("== GeneratePDF 被调用 ==11111111");
-        var v = new sn_pdfgeneratorutils.PDFGenerationAPI;
-        gs.info("== GeneratePDF 被调用 ==22222222");
-        //var result = v.convertToPDF(html, "sys_poll", "57af7aec73d423002728660c4cf6a71c", "myPDF");
-        var result = v.convertToPDF(html, "incident", "57af7aec73d423002728660c4cf6a71c", "myPDF");
-        gs.info("== GeneratePDF 被调用 ==" + JSON.stringify(result));
 
+        var record = new GlideRecord('incident');
+        var num = '';
+        var sd = '';
+        if (record.get("57af7aec73d423002728660c4cf6a71c")) {
+            num = record.number;
+            sd = record.short_description;
+        }
+        var html = "<html><body>";
+        html += "<h1>Incident表的详情</h1>";
+        html += "<p><strong>编号:</strong>" + num + "</p>";
+        html += "<p><strong>描述:</strong>" + sd + "</p>";
+        html += "</body></html>";
+        var v = new sn_pdfgeneratorutils.PDFGenerationAPI;
+        var result = v.convertToPDF(html, "incident", "57af7aec73d423002728660c4cf6a71c", "INC0009009_PDF"); //INC0009009
         var files = [];
         var attachGr = new GlideRecord("sys_attachment");
         attachGr.addQuery("table_sys_id", "57af7aec73d423002728660c4cf6a71c");
@@ -35,16 +37,11 @@ GeneratePDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
             info.link = attachGr.getLink();
             files.push(info);
         }
-        //g_scratchpad.filesUploaded = JSON.stringify(files);
         var resultAll = {};
         resultAll.filesUploaded = files;
         resultAll.attachment = result;
-
         gs.info("== GeneratePDF 被调用 resultAll==" + JSON.stringify(resultAll));
-
         return JSON.stringify(resultAll);
-
-
     },
     type: 'GeneratePDF'
 });]]></script>
@@ -52,14 +49,14 @@ GeneratePDF.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-23 06:44:25</sys_created_on>
         <sys_id>cb904533536522102429d2a0a0490e25</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>GeneratePDF</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_script_include_cb904533536522102429d2a0a0490e25</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-26 08:57:22</sys_updated_on>
+        <sys_updated_on>2025-06-04 00:15:22</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>cb904533536522102429d2a0a0490e25</id>

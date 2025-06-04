@@ -3,11 +3,15 @@
         <category>general</category>
         <client_script><![CDATA[function showConfirm() {
     if (confirm("Are you sure you want to update the field?")) {
+		var sd = document.getElementById("sd").value;
+
         // 用户点击 OK
         var ga = new GlideAjax('UpdateFieldAjax');
         ga.addParam('sysparm_name', 'updateField');
+		ga.addParam('sysparm_sd', sd);
         ga.addParam('sysparm_sys_id', '57af7aec73d423002728660c4cf6a71c'); // INC0009009 若在表单页面内用 g_form
-        ga.getXMLAnswer(function(response) {
+        //ga.getXMLAnswer(function(response) {
+		ga.getXML(function(response) {
             var answer = response.responseXML.documentElement.getAttribute("answer");
             if (answer === 'success') {
                 alert('Field updated!');
@@ -53,16 +57,17 @@ function generatePDF() {
         <endpoint>x_1639325_sn_train_ajax_confirm_test.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly xmlns:j="jelly:core" xmlns:g="glide" xmlns:gs="jelly:glide" xmlns:g2="glide_v2">
-
     <div>
-        <h1>上传PDF</h1>
+        <h1>生成表（Incident）INC0009009数据的PDF</h1>
     </div>
-    <button onclick="generatePDF()">生成 PDF</button>
+    <button onclick="generatePDF()">上传PDF</button>
     <div id="attachments_uploaded"></div>
     <div>
-        <h1>更新incident表的INC0009009这条记录的Short description这个字段</h1>
+        <h1>更新incident表的INC0009009这条记录的Short description字段</h1>
     </div>
-    <button onclick="showConfirm()">Update Field</button>
+	<div>short_description:<input type="text" style="width: 300px;" id="sd" placeholder="input short_description" /></div>
+	<div>
+    <button onclick="showConfirm()">Update Field</button></div>
 
 </j:jelly>]]></html>
         <name>ajax_confirm_test</name>
@@ -71,14 +76,14 @@ function generatePDF() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-23 06:10:01</sys_created_on>
         <sys_id>ee687877532522102429d2a0a0490e05</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>ajax_confirm_test</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_ui_page_ee687877532522102429d2a0a0490e05</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-26 11:56:16</sys_updated_on>
+        <sys_updated_on>2025-06-04 00:20:52</sys_updated_on>
     </sys_ui_page>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>ee687877532522102429d2a0a0490e05</id>
