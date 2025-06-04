@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Copy of Catalog item 31">0fa3762b53fd62102429d2a0a0490e20</cat_item>
+        <cat_item display_value="Catalog item 31 New">0fa3762b53fd62102429d2a0a0490e20</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -26,7 +26,7 @@
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
-        <hidden>false</hidden>
+        <hidden>true</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
@@ -58,8 +58,8 @@
         <record/>
         <record_producer_table/>
         <reference/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>null</reference_qual>
+        <reference_qual_condition>null</reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 06:43:36</sys_created_on>
         <sys_id>cba3fa2b53fd62102429d2a0a0490e4c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>resubmit_id</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>item_option_new_cba3fa2b53fd62102429d2a0a0490e4c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 06:43:36</sys_updated_on>
+        <sys_updated_on>2025-06-04 08:52:26</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

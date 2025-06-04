@@ -33,16 +33,12 @@ function generatePDF() {
         var srtJson = JSON.parse(answer);
         var attachmentId = srtJson.attachment.attachment_id;
         if (srtJson.attachment.status === "success") {
-            // var url = '/sys_attachment.do?sys_id=' + attachmentSysId;
-            // window.open(url, '_blank');
             alert("success");
             var files = srtJson.filesUploaded;
             var message = "";
             var ele = document.getElementById('attachments_uploaded');
             if (files != "") {
-                //var fileNames = files.split(",");
                 files.forEach(function(fName) {
-                    //console.log(fName)
                     message += "<a href =" + fName.link + " >" + fName.file_name + "</a>" + "<br/>";
                 });
             }
@@ -60,7 +56,7 @@ function generatePDF() {
     <div>
         <h1>生成表（Incident）INC0009009数据的PDF</h1>
     </div>
-    <button onclick="generatePDF()">上传PDF</button>
+    <button onclick="generatePDF()">生成PDF</button>
     <div id="attachments_uploaded"></div>
     <div>
         <h1>更新incident表的INC0009009这条记录的Short description字段</h1>
@@ -76,14 +72,14 @@ function generatePDF() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-23 06:10:01</sys_created_on>
         <sys_id>ee687877532522102429d2a0a0490e05</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>ajax_confirm_test</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_ui_page_ee687877532522102429d2a0a0490e05</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 00:20:52</sys_updated_on>
+        <sys_updated_on>2025-06-04 12:48:10</sys_updated_on>
     </sys_ui_page>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>ee687877532522102429d2a0a0490e05</id>
