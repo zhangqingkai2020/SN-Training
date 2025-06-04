@@ -28,14 +28,13 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
 	// Add your code here
-	gs.info('Business Rule Triggered for RITM: ' + current.number);
+	//gs.info('Business Rule Triggered for RITM: ' + current.number);
 	var user = new GlideRecord('sys_user');
-    if (user.get(current.requested_for)) {
+    //if (user.get(current.requested_for)) {
+	if (user.get(gs.getUserID())) {
         var manager = user.getValue('manager');
         if (manager) {
-            gs.info('Adding manager to watch_list: ' + manager);
             current.watch_list += ',' + manager;
             current.update();
         }
@@ -48,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>007ae179537566102429d2a0a0490e65</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Add Manager</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -56,7 +55,7 @@
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_script_007ae179537566102429d2a0a0490e65</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-30 01:14:56</sys_updated_on>
+        <sys_updated_on>2025-06-04 14:35:03</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

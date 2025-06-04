@@ -12,7 +12,6 @@
         <script><![CDATA[var ExcelParserUtil = Class.create();
 ExcelParserUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
     parseExcel: function() {
-        gs.info("ExcelParserUtil");
         var attachmentId = this.getParameter('sysparm_attachment_id');
         try {
             var sa = new GlideSysAttachment();
@@ -20,7 +19,7 @@ ExcelParserUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
             var parser = new sn_impex.GlideExcelParser();
             parser.setSource(attachmentStream);
             var list_sheet_name = parser.getSheetNames();
-            gs.info(" Sheet Names " + list_sheet_name.join(", "));
+            //gs.info(" Sheet Names " + list_sheet_name.join(", "));
             for (var i = 0; i < list_sheet_name.length; i++) {
                 parser.setSheetName(list_sheet_name[i]);
                 if (parser.parse()) {
@@ -37,10 +36,6 @@ ExcelParserUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
                             location: row[header3]
                         });
                     }
-                    gs.info("result=======" + JSON.stringify({
-                        status: 'success',
-                        rows: result
-                    }));
                     parser.close();
                     return JSON.stringify({
                         status: 'success',
@@ -67,14 +62,14 @@ ExcelParserUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-26 13:17:58</sys_created_on>
         <sys_id>9d36f1bc53b922102429d2a0a0490ebf</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>ExcelParserUtil</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_script_include_9d36f1bc53b922102429d2a0a0490ebf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-27 00:40:48</sys_updated_on>
+        <sys_updated_on>2025-06-04 14:28:24</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>9d36f1bc53b922102429d2a0a0490ebf</id>
