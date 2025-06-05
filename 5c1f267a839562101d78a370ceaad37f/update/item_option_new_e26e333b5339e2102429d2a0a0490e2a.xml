@@ -42,15 +42,15 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>resubmit_id</name>
+        <name>tips</name>
         <not_available_conversation>false</not_available_conversation>
         <order/>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>resubmit_id</question_text>
-        <read_only>false</read_only>
+        <question_text>Tips:</question_text>
+        <read_only>true</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
@@ -58,9 +58,9 @@
         <record/>
         <record_producer_table/>
         <reference/>
-        <reference_qual>null</reference_qual>
-        <reference_qual_condition>null</reference_qual_condition>
-        <rich_text/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <rich_text><![CDATA[<p>Resubmit</p>]]></rich_text>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
 * `current`- GlideRecord produced by Record Producer
@@ -77,16 +77,16 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-04 06:43:36</sys_created_on>
-        <sys_id>cba3fa2b53fd62102429d2a0a0490e4c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>resubmit_id</sys_name>
+        <sys_created_on>2025-06-05 06:49:54</sys_created_on>
+        <sys_id>e26e333b5339e2102429d2a0a0490e2a</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Tips:</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
-        <sys_update_name>item_option_new_cba3fa2b53fd62102429d2a0a0490e4c</sys_update_name>
+        <sys_update_name>item_option_new_e26e333b5339e2102429d2a0a0490e2a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-05 07:27:33</sys_updated_on>
+        <sys_updated_on>2025-06-05 07:44:58</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=cba3fa2b53fd62102429d2a0a0490e4c"/>
-    <fx_price action="delete_multiple" query="id=cba3fa2b53fd62102429d2a0a0490e4c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=e26e333b5339e2102429d2a0a0490e2a"/>
+    <fx_price action="delete_multiple" query="id=e26e333b5339e2102429d2a0a0490e2a"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="CNY">CNY</currency>
         <field>price_if_checked</field>
-        <id>cba3fa2b53fd62102429d2a0a0490e4c</id>
+        <id>e26e333b5339e2102429d2a0a0490e2a</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-04 06:43:36</sys_created_on>
-        <sys_id>07a3fa2b53fd62102429d2a0a0490e54</sys_id>
+        <sys_created_on>2025-06-05 06:49:54</sys_created_on>
+        <sys_id>09be773b5339e2102429d2a0a0490e89</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 06:43:36</sys_updated_on>
+        <sys_updated_on>2025-06-05 06:49:54</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="CNY">CNY</currency>
         <field>rec_price_if_checked</field>
-        <id>cba3fa2b53fd62102429d2a0a0490e4c</id>
+        <id>e26e333b5339e2102429d2a0a0490e2a</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-04 06:43:36</sys_created_on>
-        <sys_id>8ba3fa2b53fd62102429d2a0a0490e53</sys_id>
+        <sys_created_on>2025-06-05 06:49:54</sys_created_on>
+        <sys_id>c1be773b5339e2102429d2a0a0490e88</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 06:43:36</sys_updated_on>
+        <sys_updated_on>2025-06-05 06:49:54</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

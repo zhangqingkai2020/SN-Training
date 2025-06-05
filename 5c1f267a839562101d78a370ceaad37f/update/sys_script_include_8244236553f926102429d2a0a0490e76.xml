@@ -17,7 +17,7 @@ PrefillVariables.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
         var mtomGR = new GlideRecord('sc_item_option_mtom');
         mtomGR.addQuery('request_item', ritmId);
         mtomGR.query();
-		// 动态取得 request item 表里面的变量。
+        // 动态取得 request item 表里面的变量。
         while (mtomGR.next()) {
             try {
                 var varGr = mtomGR.getElement('sc_item_option');
@@ -25,7 +25,7 @@ PrefillVariables.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
                 var optId = optGR.getValue('item_option_new');
                 var optGRNew = new GlideRecord('item_option_new');
                 if (optGRNew.get(optId)) {
-					// 动态取得变量的名字
+                    // 动态取得变量的名字
                     var name = optGRNew.getValue('name');
                     result[name] = varGr.value.toString();
                 }
@@ -33,13 +33,13 @@ PrefillVariables.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
                 gs.info("catch e===============" + e.message);
             }
         }
-		result['resubmit_id'] = ritmId;
-        // var ritm = new GlideRecord('sc_req_item');
-        // if (ritm.get(ritmId)) {
-        //     // 直接打印引用字段的值（就是 Cart Item 的 sys_id）
-        //     gs.info('原始 Cart Item sys_id: ' + ritm.getValue('cart_item'));
-        // }
-		// 将变量和值返回画面
+        result['resubmit_id'] = ritmId;
+        var ritm = new GlideRecord('sc_req_item');
+        if (ritm.get(ritmId)) {
+			// 在画面上添加一个Resubmit的提示信息
+            result['tips'] = ritm.number + ' Resubmit Operation';
+        }
+        // 将变量和值返回画面
         return JSON.stringify(result);
     },
     type: 'PrefillVariables'
@@ -48,14 +48,14 @@ PrefillVariables.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-29 05:10:28</sys_created_on>
         <sys_id>8244236553f926102429d2a0a0490e76</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name>PrefillVariables</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_script_include_8244236553f926102429d2a0a0490e76</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-05 03:07:04</sys_updated_on>
+        <sys_updated_on>2025-06-05 07:44:39</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>8244236553f926102429d2a0a0490e76</id>
