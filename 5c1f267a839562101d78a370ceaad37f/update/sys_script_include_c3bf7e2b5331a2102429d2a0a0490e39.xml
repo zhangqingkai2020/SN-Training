@@ -12,28 +12,34 @@
         <script><![CDATA[var ResubmitRITMUtils = Class.create();
 ResubmitRITMUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
     updateRITM: function() {
+		// 取得变量的值
         var ritmId = this.getParameter('sysparm_ritm_id');
         var requestedFor = this.getParameter('sysparm_requested_for');
         var computerModel = this.getParameter('sysparm_computer_model');
         var notes = this.getParameter('sysparm_notes');
-
+        //更新request item 的数据
         var ritm = new GlideRecord('sc_req_item');
         if (ritm.get(ritmId)) {
             ritm.variables.requested_for = requestedFor;
             ritm.variables.computer_model = computerModel;
             ritm.variables.notes = notes;
+			// 设定为open
+			ritm.state = 1;
             ritm.update();
             var requestId = ritm.request;
+			// 更新request 的状态（resubmit）
             var req = new GlideRecord('sc_request');
             if (req.get(requestId)) {
-                req.state = -99; // 这里填写你要设定的状态值，例如 '1' 表示 Approved，或使用自定义状态值
+                req.state = -99; // resubmit
                 req.update();
             }
+			// 成功时返回处理结果
             return JSON.stringify({
                 status: 'ok',
                 req_id: req.sys_id + ''
             });
         }
+		// 失败时返回处理结果
         return JSON.stringify({
             status: 'fail',
             req_id: ''
@@ -45,14 +51,14 @@ ResubmitRITMUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor,
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-04 07:38:00</sys_created_on>
         <sys_id>c3bf7e2b5331a2102429d2a0a0490e39</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>ResubmitRITMUtils</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_script_include_c3bf7e2b5331a2102429d2a0a0490e39</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 08:37:46</sys_updated_on>
+        <sys_updated_on>2025-06-05 03:29:36</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>c3bf7e2b5331a2102429d2a0a0490e39</id>

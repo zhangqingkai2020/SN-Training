@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Copy of Catalog item 31">0fa3762b53fd62102429d2a0a0490e20</cat_item>
+        <cat_item display_value="Catalog item 31 New">0fa3762b53fd62102429d2a0a0490e20</cat_item>
         <cat_variable/>
         <condition/>
         <description/>
@@ -29,7 +29,7 @@
     var requested_for = g_form.getValue('requested_for');
     var computer_model = g_form.getValue('computer_model');
     var notes = g_form.getValue('notes');
-
+    // 调用Ajax 更新request item的值
     var ga = new GlideAjax('ResubmitRITMUtils');
     ga.addParam('sysparm_name', 'updateRITM');
     ga.addParam('sysparm_ritm_id', ritm_id);
@@ -40,16 +40,13 @@
 		var data = JSON.parse(response);
         if (data.status === 'ok') {
             alert("重新提交成功！");
-            // 你可以跳转回 RITM 页面
-            //window.location.href = '/sp?id=request_item&sys_id=' + ritm_id;
-			// https://dev222686.service-now.com/sp?id=sc_request&is_new_order=true&table=sc_request&sys_id=a256c3635371a2102429d2a0a0490e2c
+            // 跳转到 request 页面
 			top.location.href = '/sp?id=sc_request&is_new_order=true&table=sc_request&sys_id=' + data.req_id;
-			//action.setRedirectURL('/sp?id=request_item&sys_id=' + ritm_id);
         } else {
             alert("提交失败：" + response);
         }
     });
-    return false; // 阻止提交
+    return false; // 阻止原有Catalog item提交
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -57,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>36647e6b53fd62102429d2a0a0490e04</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>resubmit</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -65,7 +62,7 @@
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>catalog_script_client_36647e6b53fd62102429d2a0a0490e04</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 08:28:33</sys_updated_on>
+        <sys_updated_on>2025-06-05 03:31:27</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
