@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Navigate to the 'My Approvals' module in the 'Service Desk' application</description>
+        <display_name>Navigate to Module</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>8</order>
+        <step_config display_value="Navigate to Module">c832fc4073720300c79260bdfaf6a7a0</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:26:57</sys_created_on>
+        <sys_id>66e9d79853ca66102429d2a0a0490e3c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Navigate to Module</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_atf_step_66e9d79853ca66102429d2a0a0490e3c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:33:24</sys_updated_on>
+        <table>sysapproval_approver</table>
+        <test display_value="Test Catalog Item 1">3fa1fed8530a66102429d2a0a0490eca</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=66e9d79853ca66102429d2a0a0490e3c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>66e9d79853ca66102429d2a0a0490e3c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:26:57</sys_created_on>
+        <sys_id>2e1a139c53ca66102429d2a0a0490eba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:33:24</sys_updated_on>
+        <value>45a9344bc6112293018d343ac144b45a</value>
+        <variable display_value="Module">b6d2b40c73720300c79260bdfaf6a786</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_c832fc4073720300c79260bdfaf6a7a0^id=66e9d79853ca66102429d2a0a0490e3c"/>
+</record_update>

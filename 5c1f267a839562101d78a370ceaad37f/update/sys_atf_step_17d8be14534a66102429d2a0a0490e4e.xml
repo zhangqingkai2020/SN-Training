@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Answer the questions on the form as follows:
+Select Computer Model = Lenovo ThinkStation S20
+and requested_for = Beth Anglin
+and notes = Test ATF</description>
+        <display_name>Set Variable Values</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>3</order>
+        <step_config display_value="Set Variable Values">323ca6e1c3b2220076173b0ac3d3aec1</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 15:01:44</sys_created_on>
+        <sys_id>17d8be14534a66102429d2a0a0490e4e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Set Variable Values</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_atf_step_17d8be14534a66102429d2a0a0490e4e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 15:11:02</sys_updated_on>
+        <table/>
+        <test display_value="Test Catalog Item 1">3fa1fed8530a66102429d2a0a0490eca</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=17d8be14534a66102429d2a0a0490e4e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>17d8be14534a66102429d2a0a0490e4e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 15:01:44</sys_created_on>
+        <sys_id>97d8be14534a66102429d2a0a0490e4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 15:01:44</sys_updated_on>
+        <value>fbdeb62b83d166101d78a370ceaad36b</value>
+        <variable display_value="Item">571e6a25c3b2220076173b0ac3d3ae46</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>17d8be14534a66102429d2a0a0490e4e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 15:01:44</sys_created_on>
+        <sys_id>d3d8be14534a66102429d2a0a0490e4f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 15:11:02</sys_updated_on>
+        <value>IO:44eeba2b83d166101d78a370ceaad374=Lenovo ThinkStation S20^IO:7bdeba2b83d166101d78a370ceaad364=46d44a23a9fe19810012d100cca80666^IO:88eeba2b83d166101d78a370ceaad38c=Test ATF^EQ</value>
+        <variable display_value="Variable Values">346eea25c3b2220076173b0ac3d3ae8b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_323ca6e1c3b2220076173b0ac3d3aec1^id=17d8be14534a66102429d2a0a0490e4e"/>
+</record_update>

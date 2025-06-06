@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from display_value="Set Field Values">48bc1f10530e66102429d2a0a0490ec6</copied_from>
+        <description>Set the following values on the form:
+Comments = Reject</description>
+        <display_name>Set Field Values</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>10</order>
+        <step_config display_value="Set Field Values">fcae4a935332120028bc29cac2dc340e</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
+        <sys_id>8950a3d4530e66102429d2a0a0490e15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Field Values</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_atf_step_8950a3d4530e66102429d2a0a0490e15</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
+        <table>sysapproval_approver</table>
+        <test display_value="Test Catalog Item 1 copy">fc502f94530e66102429d2a0a0490e86</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=8950a3d4530e66102429d2a0a0490e15"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>8950a3d4530e66102429d2a0a0490e15</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
+        <sys_id>4d50a3d4530e66102429d2a0a0490e16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
+        <value>comments=Reject^EQ</value>
+        <variable display_value="Field values">b3dba2465320220002c6435723dc34f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>8950a3d4530e66102429d2a0a0490e15</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
+        <sys_id>8950a3d4530e66102429d2a0a0490e16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
+        <value>sysapproval_approver</value>
+        <variable display_value="Table">424ca6465320220002c6435723dc34b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>8950a3d4530e66102429d2a0a0490e15</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
+        <sys_id>c550a3d4530e66102429d2a0a0490e16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
+        <value>standard_ui</value>
+        <variable display_value="Form UI">946f3c1a0f23330072e6452bc4767eda</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_fcae4a935332120028bc29cac2dc340e^id=8950a3d4530e66102429d2a0a0490e15"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sys_atf_step_8950a3d4530e66102429d2a0a0490e15</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from display_value="Set Field Values">48bc1f10530e66102429d2a0a0490ec6</copied_from><description>Set the following values on the form:
+Comments = Reject</description><display_name>Set Field Values</display_name><inputs/><mugshots_cache_json/><notes/><order>10</order><step_config display_value="Set Field Values">fcae4a935332120028bc29cac2dc340e</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-06 17:54:09</sys_created_on><sys_id>8950a3d4530e66102429d2a0a0490e15</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Set Field Values</sys_name><sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package><sys_policy/><sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope><sys_update_name>sys_atf_step_8950a3d4530e66102429d2a0a0490e15</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-06 17:54:09</sys_updated_on><table>sysapproval_approver</table><test display_value="Test Catalog Item 1 copy">fc502f94530e66102429d2a0a0490e86</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=8950a3d4530e66102429d2a0a0490e15"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>8950a3d4530e66102429d2a0a0490e15</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-06 17:54:09</sys_created_on><sys_id>4d50a3d4530e66102429d2a0a0490e16</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-06 17:54:09</sys_updated_on><value>comments=Reject^EQ</value><variable display_value="Field values">b3dba2465320220002c6435723dc34f0</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>8950a3d4530e66102429d2a0a0490e15</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-06 17:54:09</sys_created_on><sys_id>8950a3d4530e66102429d2a0a0490e16</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-06 17:54:09</sys_updated_on><value>sysapproval_approver</value><variable display_value="Table">424ca6465320220002c6435723dc34b5</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>8950a3d4530e66102429d2a0a0490e15</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-06 17:54:09</sys_created_on><sys_id>c550a3d4530e66102429d2a0a0490e16</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-06 17:54:09</sys_updated_on><value>standard_ui</value><variable display_value="Form UI">946f3c1a0f23330072e6452bc4767eda</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_fcae4a935332120028bc29cac2dc340e^id=8950a3d4530e66102429d2a0a0490e15"/></record_update>]]></payload>
+        <payload_hash>-1376566634</payload_hash>
+        <record_name>Set Field Values</record_name>
+        <reverted_from/>
+        <source>dba2e357533162102429d2a0a0490e7d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
+        <sys_id>4150a3d4530e66102429d2a0a0490e19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1974660f9060000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>4550a3d4ae0e66106814e6192cf8d218</update_guid>
+        <update_guid_history>4550a3d4ae0e66106814e6192cf8d218:-1376566634</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:54:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>6ff92170e6d84938b14e111785ef3724</sys_id>
+        <sys_metadata>8950a3d4530e66102429d2a0a0490e15</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Field Values</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>sys_atf_step_8950a3d4530e66102429d2a0a0490e15</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_8950a3d4530e66102429d2a0a0490e15">4150a3d4530e66102429d2a0a0490e19</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:54:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

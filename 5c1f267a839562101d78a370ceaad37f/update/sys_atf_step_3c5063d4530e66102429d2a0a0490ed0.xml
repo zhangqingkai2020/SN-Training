@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="Open a Catalog Item">d7d8be14534a66102429d2a0a0490e49</copied_from>
+        <description>Open 'Apply for a new employee computer' catalog item</description>
+        <display_name>Open a Catalog Item</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <step_config display_value="Open a Catalog Item">2516c0e1c332220076173b0ac3d3ae39</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
+        <sys_id>3c5063d4530e66102429d2a0a0490ed0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open a Catalog Item</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_atf_step_3c5063d4530e66102429d2a0a0490ed0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
+        <table/>
+        <test display_value="Test Catalog Item 2">fc502f94530e66102429d2a0a0490e86</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=3c5063d4530e66102429d2a0a0490ed0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>3c5063d4530e66102429d2a0a0490ed0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
+        <sys_id>705063d4530e66102429d2a0a0490ed2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
+        <value>fbdeb62b83d166101d78a370ceaad36b</value>
+        <variable display_value="Catalog item">b0d64ce1c332220076173b0ac3d3ae95</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_2516c0e1c332220076173b0ac3d3ae39^id=3c5063d4530e66102429d2a0a0490ed0"/>
+</record_update>
