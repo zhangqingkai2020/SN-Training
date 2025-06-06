@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>kb</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.transclude:last-child {
+  padding-bottom: 10px;
+}
+
+.list-group {
+ 	margin-bottom: 0px; 
+}
+
+.list-group-item {
+    padding: 0;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+.list-group-item:last-child {
+	margin-bottom: 10px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,color</field_list>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Copy of KB Most Viewed</name>
+        <option_schema>[{"name":"max_number","section":"Presentation","label":"Max number","type":"integer"},{"displayValue":"Knowledge Category","name":"kb_category","section":"Data","label":"KB category","type":"reference","value":"kb_category","ed":{"reference":"kb_category"}}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.articles = [];
+	options.title = options.title || gs.getMessage("Most Viewed Articles");
+	
+	var z;
+	var knowledge_bases;
+	var sys_id = $sp.getParameter('sys_id');
+	var kb_id = $sp.getParameter('kb_id');
+	var gr = new GlideRecord("kb_knowledge");
+	
+	var foundArticle = false;
+	if (sys_id) { // sys_id specified, try to find an article by sys_id or number
+		gr.addQuery("sys_id", sys_id).addOrCondition("number", sys_id);
+		gr.query();
+		if (gr.next() && gr.canRead()) {
+			// When sys_id matches a kb_record, get KB of the article
+			knowledge_bases = String(gr.getValue('kb_knowledge_base'));
+			foundArticle = true;
+		}
+	}
+	
+	if (!foundArticle) { /* For all other pages this code will get executed. Used on knowledge home page.*/
+		/*If KB is selected display most viewed articles only from that KB*/
+		if (kb_id != null)
+			knowledge_bases = String(kb_id);
+		else {
+			 /*Get all knowledge bases associated with Portal*/
+			knowledge_bases = String($sp.getKnowledgeBases());
+		}
+	}
+	
+	if (GlideStringUtil.notNil(knowledge_bases))
+		z = $sp.getAllKBRecords(knowledge_bases);
+	else //If there are no accessible KBs for logged in user
+		return;
+	
+	z.addQuery("sys_view_count", ">", "0");
+	if (options.kb_category)
+		z.addQuery("kb_category", options.kb_category);
+	z.orderByDesc('sys_view_count');
+	z.setLimit(options.max_number || 5);
+	z.query();
+	while (z.next()) {
+		if (!z.canRead())
+			continue;
+
+		var a = {};
+		$sp.getRecordValues(a, z, 'short_description,sys_view_count,sys_id,published');
+		data.articles.push(a);
+	}
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 03:32:41</sys_created_on>
+        <sys_id>fd2bdcd0534e26102429d2a0a0490e61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of KB Most Viewed</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sp_widget_fd2bdcd0534e26102429d2a0a0490e61</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 03:32:41</sys_updated_on>
+        <template><![CDATA[<sp-panel ng-if="data.articles.length > 0" >
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="a in data.articles">
+      <a href="?id=kb_article&sys_id={{::a.sys_id}}">{{::a.short_description}}</a>
+      <div>
+        <span ng-if="a.sys_view_count == 1" class="views pad-right">
+          <glyph sn-char="eye-open" class="pad-right"></glyph>
+          ${{{::a.sys_view_count}} View}
+        </span>
+        <span ng-if="a.sys_view_count > 1" class="views pad-right">
+          <glyph sn-char="eye-open" class="pad-right"></glyph>
+          ${{{::a.sys_view_count}} Views}
+        </span>
+        <span ng-if="false" class="published pad-right">
+          <span ng-if="a.sys_view_count > 0" class="pad-right">&#8226;</span> <glyph sn-char="calendar" class="pad-right"></glyph>
+          <sn-day-ago date="a.published"></sn-day-ago>
+        </span>
+      </div>
+    </li>
+  </ul>
+</sp-panel>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sp_widget_fd2bdcd0534e26102429d2a0a0490e61</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;kb&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.transclude:last-child {
+  padding-bottom: 10px;
+}
+
+.list-group {
+ 	margin-bottom: 0px; 
+}
+
+.list-group-item {
+    padding: 0;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+.list-group-item:last-child {
+	margin-bottom: 10px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title,color&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Copy of KB Most Viewed&lt;/name&gt;&lt;option_schema&gt;[{"name":"max_number","section":"Presentation","label":"Max number","type":"integer"},{"displayValue":"Knowledge Category","name":"kb_category","section":"Data","label":"KB category","type":"reference","value":"kb_category","ed":{"reference":"kb_category"}}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.articles = [];
+	options.title = options.title || gs.getMessage("Most Viewed Articles");
+	
+	var z;
+	var knowledge_bases;
+	var sys_id = $sp.getParameter('sys_id');
+	var kb_id = $sp.getParameter('kb_id');
+	var gr = new GlideRecord("kb_knowledge");
+	
+	var foundArticle = false;
+	if (sys_id) { // sys_id specified, try to find an article by sys_id or number
+		gr.addQuery("sys_id", sys_id).addOrCondition("number", sys_id);
+		gr.query();
+		if (gr.next() &amp;&amp; gr.canRead()) {
+			// When sys_id matches a kb_record, get KB of the article
+			knowledge_bases = String(gr.getValue('kb_knowledge_base'));
+			foundArticle = true;
+		}
+	}
+	
+	if (!foundArticle) { /* For all other pages this code will get executed. Used on knowledge home page.*/
+		/*If KB is selected display most viewed articles only from that KB*/
+		if (kb_id != null)
+			knowledge_bases = String(kb_id);
+		else {
+			 /*Get all knowledge bases associated with Portal*/
+			knowledge_bases = String($sp.getKnowledgeBases());
+		}
+	}
+	
+	if (GlideStringUtil.notNil(knowledge_bases))
+		z = $sp.getAllKBRecords(knowledge_bases);
+	else //If there are no accessible KBs for logged in user
+		return;
+	
+	z.addQuery("sys_view_count", "&gt;", "0");
+	if (options.kb_category)
+		z.addQuery("kb_category", options.kb_category);
+	z.orderByDesc('sys_view_count');
+	z.setLimit(options.max_number || 5);
+	z.query();
+	while (z.next()) {
+		if (!z.canRead())
+			continue;
+
+		var a = {};
+		$sp.getRecordValues(a, z, 'short_description,sys_view_count,sys_id,published');
+		data.articles.push(a);
+	}
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-06 03:32:41&lt;/sys_created_on&gt;&lt;sys_id&gt;fd2bdcd0534e26102429d2a0a0490e61&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of KB Most Viewed&lt;/sys_name&gt;&lt;sys_package display_value="SN Training" source="x_1639325_sn_train"&gt;5c1f267a839562101d78a370ceaad37f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SN Training"&gt;5c1f267a839562101d78a370ceaad37f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fd2bdcd0534e26102429d2a0a0490e61&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-06 03:32:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;sp-panel ng-if="data.articles.length &gt; 0" &gt;
+  &lt;ul class="list-group"&gt;
+    &lt;li class="list-group-item" ng-repeat="a in data.articles"&gt;
+      &lt;a href="?id=kb_article&amp;sys_id={{::a.sys_id}}"&gt;{{::a.short_description}}&lt;/a&gt;
+      &lt;div&gt;
+        &lt;span ng-if="a.sys_view_count == 1" class="views pad-right"&gt;
+          &lt;glyph sn-char="eye-open" class="pad-right"&gt;&lt;/glyph&gt;
+          ${{{::a.sys_view_count}} View}
+        &lt;/span&gt;
+        &lt;span ng-if="a.sys_view_count &gt; 1" class="views pad-right"&gt;
+          &lt;glyph sn-char="eye-open" class="pad-right"&gt;&lt;/glyph&gt;
+          ${{{::a.sys_view_count}} Views}
+        &lt;/span&gt;
+        &lt;span ng-if="false" class="published pad-right"&gt;
+          &lt;span ng-if="a.sys_view_count &gt; 0" class="pad-right"&gt;&amp;#8226;&lt;/span&gt; &lt;glyph sn-char="calendar" class="pad-right"&gt;&lt;/glyph&gt;
+          &lt;sn-day-ago date="a.published"&gt;&lt;/sn-day-ago&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/sp-panel&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>779210329</payload_hash>
+        <record_name>Copy of KB Most Viewed</record_name>
+        <reverted_from/>
+        <source>dba2e357533162102429d2a0a0490e7d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 03:32:41</sys_created_on>
+        <sys_id>752bdcd0534e26102429d2a0a0490e67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197434c447d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 03:32:41</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>392bdcd0c64e2610101056b01a652466</update_guid>
+        <update_guid_history>392bdcd0c64e2610101056b01a652466:779210329</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Copy of KB Most Viewed">e75b5414534e26102429d2a0a0490ea8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 03:33:38</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>358e4fc5467645be94f69778eb714949</sys_id>
+        <sys_metadata>fd2bdcd0534e26102429d2a0a0490e61</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of KB Most Viewed</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>sp_widget_fd2bdcd0534e26102429d2a0a0490e61</sys_update_name>
+        <sys_update_version display_value="sp_widget_fd2bdcd0534e26102429d2a0a0490e61">752bdcd0534e26102429d2a0a0490e67</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 03:33:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

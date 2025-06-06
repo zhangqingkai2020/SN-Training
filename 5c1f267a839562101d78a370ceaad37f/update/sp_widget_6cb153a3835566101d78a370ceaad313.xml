@@ -4,15 +4,14 @@
         <client_script><![CDATA[api.controller = function($scope) {
     /* widget controller */
     var c = this;
-		//g_form is avaiable via the page from $scope. Making it shorter here.
+    //g_form is avaiable via the page from $scope. Making it shorter here.
     var gform = $scope.page.g_form;
-	
-	  c.steps = ['Step1', 'Step2', 'Step3', 'Step4', 'Step5'];
+    c.steps = ['Step1', 'Step2', 'Step3', 'Step4', 'Step5'];
     c.currentStep = 0;
 
     c.selectStep = function(index) {
-      c.currentStep = index;
-		  gform.setValue('current_section', index+1);
+        c.currentStep = index;
+        gform.setValue('current_section', index + 1);
     }
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -138,14 +137,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-10 12:27:52</sys_created_on>
         <sys_id>6cb153a3835566101d78a370ceaad313</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>SC Itme Tab C</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sp_widget_6cb153a3835566101d78a370ceaad313</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-22 05:34:09</sys_updated_on>
+        <sys_updated_on>2025-06-06 04:20:18</sys_updated_on>
         <template><![CDATA[<div class="step-tabs">
   <ul class="steps">
     <li class="home-step" ng-click="c.selectStep(0)">

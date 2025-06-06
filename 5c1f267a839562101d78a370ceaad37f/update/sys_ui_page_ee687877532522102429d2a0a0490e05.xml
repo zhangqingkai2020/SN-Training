@@ -1,21 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
     <sys_ui_page action="INSERT_OR_UPDATE">
         <category>general</category>
-        <client_script><![CDATA[function showConfirm() {
-    if (confirm("Are you sure you want to update the field?")) {
-		var sd = document.getElementById("sd").value;
+        <client_script><![CDATA[// 生成PDF
+function generatePDF() {
+    var ga = new GlideAjax('GeneratePDF');
+	// 执行Ajax生成PDF的方法
+    ga.addParam('sysparm_name', 'generate');
+    ga.getXMLAnswer(function(answer) {
+        var srtJson = JSON.parse(answer);
+        var attachmentId = srtJson.attachment.attachment_id;
+		// 成功时
+        if (srtJson.attachment.status === "success") {
+            alert("success");
+            var files = srtJson.filesUploaded;
+            var message = "";
+            var ele = document.getElementById('attachments_uploaded');
+			// 生成下载Link，表示在画面上
+            if (files != "") {
+                files.forEach(function(fName) {
+                    message += "<a href =" + fName.link + " >" + fName.file_name + "</a>" + "<br/>";
+                });
+            }
+            ele.innerHTML = message;
+        } else {
+			// 生成时，提示信息
+            alert('生成失败，请检查 PDF 配置。');
+        }
+    });
+}
 
+// 更新Field
+function showConfirm() {
+    if (confirm("Are you sure you want to update the field?")) {
+		// 取得画面上的short description的值
+		var sd = document.getElementById("sd").value;
         // 用户点击 OK
         var ga = new GlideAjax('UpdateFieldAjax');
         ga.addParam('sysparm_name', 'updateField');
 		ga.addParam('sysparm_sd', sd);
-        ga.addParam('sysparm_sys_id', '57af7aec73d423002728660c4cf6a71c'); // INC0009009 若在表单页面内用 g_form
+        ga.addParam('sysparm_sys_id', '57af7aec73d423002728660c4cf6a71c'); 
         //ga.getXMLAnswer(function(response) {
 		ga.getXML(function(response) {
             var answer = response.responseXML.documentElement.getAttribute("answer");
             if (answer === 'success') {
                 alert('Field updated!');
-                location.reload(); // 或 g_form.refresh()
+                //location.reload(); // 或 g_form.refresh()
             } else {
                 alert('Update failed.');
             }
@@ -25,29 +54,7 @@
         alert("Update canceled.");
     }
 }
-
-function generatePDF() {
-    var ga = new GlideAjax('GeneratePDF');
-    ga.addParam('sysparm_name', 'generate');
-    ga.getXMLAnswer(function(answer) {
-        var srtJson = JSON.parse(answer);
-        var attachmentId = srtJson.attachment.attachment_id;
-        if (srtJson.attachment.status === "success") {
-            alert("success");
-            var files = srtJson.filesUploaded;
-            var message = "";
-            var ele = document.getElementById('attachments_uploaded');
-            if (files != "") {
-                files.forEach(function(fName) {
-                    message += "<a href =" + fName.link + " >" + fName.file_name + "</a>" + "<br/>";
-                });
-            }
-            ele.innerHTML = message;
-        } else {
-            alert('生成失败，请检查 PDF 配置。');
-        }
-    });
-}]]></client_script>
+]]></client_script>
         <description/>
         <direct>false</direct>
         <endpoint>x_1639325_sn_train_ajax_confirm_test.do</endpoint>
@@ -62,9 +69,7 @@ function generatePDF() {
         <h1>更新incident表的INC0009009这条记录的Short description字段</h1>
     </div>
 	<div>short_description:<input type="text" style="width: 300px;" id="sd" placeholder="input short_description" /></div>
-	<div>
-    <button onclick="showConfirm()">Update Field</button></div>
-
+	<div><button onclick="showConfirm()">Update Field</button></div>
 </j:jelly>]]></html>
         <name>ajax_confirm_test</name>
         <processing_script/>
@@ -72,14 +77,14 @@ function generatePDF() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-23 06:10:01</sys_created_on>
         <sys_id>ee687877532522102429d2a0a0490e05</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>ajax_confirm_test</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_ui_page_ee687877532522102429d2a0a0490e05</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 12:48:10</sys_updated_on>
+        <sys_updated_on>2025-06-05 08:29:50</sys_updated_on>
     </sys_ui_page>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>ee687877532522102429d2a0a0490e05</id>

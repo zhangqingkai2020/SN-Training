@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>kb</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.transclude:last-child {&#13;
+  padding-bottom: 10px;&#13;
+}&#13;
+&#13;
+.list-group {&#13;
+ 	margin-bottom: 0px; &#13;
+}&#13;
+&#13;
+.list-group-item {&#13;
+    padding: 0;&#13;
+    border: none;&#13;
+    margin-bottom: 10px;&#13;
+    border-radius: 0px;&#13;
+}&#13;
+&#13;
+.list-group-item:last-child {&#13;
+	margin-bottom: 10px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,color</field_list>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>KB Updated Desc Viewed_bk</name>
+        <option_schema>[{"name":"max_number","section":"Presentation","label":"Max number","type":"integer"},{"displayValue":"Knowledge Category","name":"kb_category","section":"Data","label":"KB category","type":"reference","value":"kb_category","ed":{"reference":"kb_category"}}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.articles = [];
+	options.title = options.title || gs.getMessage("KB Updated Desc Viewed");
+	
+	var z;
+	var knowledge_bases;
+	var sys_id = $sp.getParameter('sys_id');
+	var kb_id = $sp.getParameter('kb_id');
+	var gr = new GlideRecord("kb_knowledge");
+	
+	var foundArticle = false;
+	if (sys_id) { // sys_id specified, try to find an article by sys_id or number
+		gr.addQuery("sys_id", sys_id).addOrCondition("number", sys_id);
+		gr.query();
+		if (gr.next() && gr.canRead()) {
+			// When sys_id matches a kb_record, get KB of the article
+			knowledge_bases = String(gr.getValue('kb_knowledge_base'));
+			foundArticle = true;
+		}
+	}
+	
+	if (!foundArticle) { /* For all other pages this code will get executed. Used on knowledge home page.*/
+		/*If KB is selected display most viewed articles only from that KB*/
+		if (kb_id != null)
+			knowledge_bases = String(kb_id);
+		else {
+			 /*Get all knowledge bases associated with Portal*/
+			knowledge_bases = String($sp.getKnowledgeBases());
+		}
+	}
+	
+	if (GlideStringUtil.notNil(knowledge_bases))
+		z = $sp.getAllKBRecords(knowledge_bases);
+	else //If there are no accessible KBs for logged in user
+		return;
+	
+	// z.addQuery("sys_view_count", ">", "0");
+	// if (options.kb_category)
+	// 	z.addQuery("kb_category", options.kb_category);
+	// z.orderByDesc('sys_view_count');
+	// workflow_state=published^active=true
+	z.addQuery("workflow_state", "published");
+	z.addQuery("active", true);
+	z.orderByDesc('sys_updated_on');
+	z.setLimit(options.max_number || 5);
+	z.query();
+	while (z.next()) {
+		if (!z.canRead())
+			continue;
+
+		var a = {};
+		$sp.getRecordValues(a, z, 'short_description,sys_view_count,sys_id,published,number,sys_updated_on');
+		data.articles.push(a);
+	}
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 04:12:10</sys_created_on>
+        <sys_id>9034e0dc534e26102429d2a0a0490e42</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>KB Updated Desc Viewed_bk</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sp_widget_9034e0dc534e26102429d2a0a0490e42</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 04:12:25</sys_updated_on>
+        <template><![CDATA[<sp-panel ng-if="data.articles.length > 0" >
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="a in data.articles">
+      <a href="?id=kb_article&sys_id={{::a.sys_id}}">{{::a.number}} ({{::a.short_description}})</a>
+      <div>
+        <span class="published pad-right">
+          <glyph sn-char="calendar" class="pad-right" aria-hidden="true"></glyph>
+          <sn-time-ago timestamp="a.sys_updated_on" label="Updated"></sn-time-ago>
+        </span>
+        <span ng-if="a.sys_view_count == 1" class="views pad-right">
+          <glyph sn-char="eye-open" class="pad-right"></glyph>
+          ${{{::a.sys_view_count}} View}
+        </span>
+        <span ng-if="a.sys_view_count > 1" class="views pad-right">
+          <glyph sn-char="eye-open" class="pad-right"></glyph>
+          ${{{::a.sys_view_count}} Views}
+        </span>
+        <span ng-if="false" class="published pad-right">
+          <span ng-if="a.sys_view_count > 0" class="pad-right">&#8226;</span> <glyph sn-char="calendar" class="pad-right"></glyph>
+          <sn-day-ago date="a.published"></sn-day-ago>
+        </span>
+      </div>
+    </li>
+  </ul>
+</sp-panel>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9034e0dc534e26102429d2a0a0490e42</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 04:12:23</sys_created_on>
+        <sys_id>533424dc534e26102429d2a0a0490e5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 04:12:23</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
