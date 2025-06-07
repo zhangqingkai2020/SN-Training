@@ -14,16 +14,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-06 17:54:09</sys_created_on>
         <sys_id>0550a3d4530e66102429d2a0a0490e0a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Open an Existing Record</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_atf_step_0550a3d4530e66102429d2a0a0490e0a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-06 17:54:52</sys_updated_on>
+        <sys_updated_on>2025-06-07 05:04:04</sys_updated_on>
         <table>sysapproval_approver</table>
-        <test display_value="Test Catalog Item 2">fc502f94530e66102429d2a0a0490e86</test>
+        <test display_value="Test Catalog Item Approve">fc502f94530e66102429d2a0a0490e86</test>
         <timeout/>
         <warning_message/>
     </sys_atf_step>
@@ -124,5 +124,29 @@
         <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
         <table>var__m_atf_input_variable_5f2e0e535332120028bc29cac2dc34d3</table>
         <value>{{step['495063d4530e66102429d2a0a0490efb'].first_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>selected_tab_index</field>
+        <id>0550a3d4530e66102429d2a0a0490e0a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 06:27:06</sys_created_on>
+        <sys_id>22ac4e6c534aa6102429d2a0a0490e43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 06:27:06</sys_updated_on>
+        <table>var__m_atf_input_variable_5f2e0e535332120028bc29cac2dc34d3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>view</field>
+        <id>0550a3d4530e66102429d2a0a0490e0a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 06:27:06</sys_created_on>
+        <sys_id>6eac4e6c534aa6102429d2a0a0490e42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 06:27:06</sys_updated_on>
+        <table>var__m_atf_input_variable_5f2e0e535332120028bc29cac2dc34d3</table>
+        <value/>
     </sys_element_mapping>
 </record_update>

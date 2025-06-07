@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_whitelist">
+    <sys_atf_whitelist action="DELETE">
+        <active>true</active>
+        <description/>
+        <error_location>server_error</error_location>
+        <error_message>JavaScript evaluation error on:
+current.active = false;
+current.work_end = nowDateTime();
+
+var dateT</error_message>
+        <report_level>ignored</report_level>
+        <sys_class_name>sys_atf_whitelist</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 04:06:15</sys_created_on>
+        <sys_id>5b6c61ec5386a6102429d2a0a0490e0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JavaScript evaluation error on:
+current.active = false;
+current.work_end = nowDateTime();
+
+var dateT</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_atf_whitelist_5b6c61ec5386a6102429d2a0a0490e0c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 04:06:15</sys_updated_on>
+        <test display_value="Test Catalog Item 2">fc502f94530e66102429d2a0a0490e86</test>
+    </sys_atf_whitelist>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SN Training">5c1f267a839562101d78a370ceaad37f</application>
+        <file_path/>
+        <instance_id>f8c6c33fdb2af5d4b1eb9027c59619d2</instance_id>
+        <instance_name>dev222686</instance_name>
+        <name>sys_atf_whitelist_5b6c61ec5386a6102429d2a0a0490e0c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_whitelist"><sys_atf_whitelist action="INSERT_OR_UPDATE"><active>true</active><description/><error_location>server_error</error_location><error_message>JavaScript evaluation error on:
+current.active = false;
+current.work_end = nowDateTime();
+
+var dateT</error_message><report_level>ignored</report_level><sys_class_name>sys_atf_whitelist</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-07 04:06:15</sys_created_on><sys_id>5b6c61ec5386a6102429d2a0a0490e0c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>JavaScript evaluation error on:
+current.active = false;
+current.work_end = nowDateTime();
+
+var dateT</sys_name><sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package><sys_policy/><sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope><sys_update_name>sys_atf_whitelist_5b6c61ec5386a6102429d2a0a0490e0c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-07 04:06:15</sys_updated_on><test display_value="Test Catalog Item 2">fc502f94530e66102429d2a0a0490e86</test></sys_atf_whitelist></record_update>]]></payload>
+        <payload_hash>-1402524179</payload_hash>
+        <record_name>JavaScript evaluation error on:
+current.active = false;
+current.work_end = nowDateTime();
+
+var dateT</record_name>
+        <reverted_from/>
+        <source>dba2e357533162102429d2a0a0490e7d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 04:06:15</sys_created_on>
+        <sys_id>d76c61ec5386a6102429d2a0a0490e10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19748915b6d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 04:06:15</sys_updated_on>
+        <type>Allowed Error</type>
+        <update_guid>9b6c61ec1a86a6103e82ea95c410430f</update_guid>
+        <update_guid_history>9b6c61ec1a86a6103e82ea95c410430f:-1402524179</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 04:08:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_whitelist">sys_atf_whitelist</sys_db_object>
+        <sys_id>9b937c51c5774fb09794cc820c9ba504</sys_id>
+        <sys_metadata>5b6c61ec5386a6102429d2a0a0490e0c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JavaScript evaluation error on:
+current.active = false;
+current.work_end = nowDateTime();
+
+var dateT</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_scope_delete display_value="">64ee8928d60b4eb9aa5a6b8914aa9c09</sys_scope_delete>
+        <sys_update_name>sys_atf_whitelist_5b6c61ec5386a6102429d2a0a0490e0c</sys_update_name>
+        <sys_update_version display_value="sys_atf_whitelist_5b6c61ec5386a6102429d2a0a0490e0c">d76c61ec5386a6102429d2a0a0490e10</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 04:08:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

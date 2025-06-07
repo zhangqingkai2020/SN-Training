@@ -1,87 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
     <sys_atf_step action="INSERT_OR_UPDATE">
         <active>true</active>
-        <copied_from display_value="Validate Outbound Email">7f9d1b90530e66102429d2a0a0490e15</copied_from>
+        <copied_from/>
         <description>Validate that an email was generated matching query:
 Recipients = {{Step 1: Impersonate.User.Email}}
-and Subject contains Approved,Waiting for Allocation
-and Body contains The computer you applied for employee has been approved by the IT Support department,
+and Subject contains was completed
+and Body contains The computer application has been completed.
+and Copied = Beth Anglin &lt;beth.anglin@example.com&gt;,IT Support &lt;88578466@qq.com&gt;
+and State = Processed
 With a failure timeout of 30 Seconds</description>
         <display_name>Validate Outbound Email</display_name>
         <inputs/>
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>11</order>
+        <order>19</order>
         <step_config display_value="Validate Outbound Email">32911152c3833300eaac11fe81d3ae82</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
-        <sys_id>0150a3d4530e66102429d2a0a0490e20</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_created_on>2025-06-07 06:09:32</sys_created_on>
+        <sys_id>4bd702a4534aa6102429d2a0a0490ec9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Validate Outbound Email</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
-        <sys_update_name>sys_atf_step_0150a3d4530e66102429d2a0a0490e20</sys_update_name>
+        <sys_update_name>sys_atf_step_4bd702a4534aa6102429d2a0a0490ec9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 05:04:04</sys_updated_on>
+        <sys_updated_on>2025-06-07 07:30:58</sys_updated_on>
         <table/>
         <test display_value="Test Catalog Item Approve">fc502f94530e66102429d2a0a0490e86</test>
         <timeout>1970-01-01 00:00:30</timeout>
         <warning_message/>
     </sys_atf_step>
-    <sys_variable_value action="delete_multiple" query="document_key=0150a3d4530e66102429d2a0a0490e20"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4bd702a4534aa6102429d2a0a0490ec9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
-        <document_key>0150a3d4530e66102429d2a0a0490e20</document_key>
+        <document_key>4bd702a4534aa6102429d2a0a0490ec9</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
-        <sys_id>0950a3d4530e66102429d2a0a0490e21</sys_id>
+        <sys_created_on>2025-06-07 06:09:32</sys_created_on>
+        <sys_id>55a8ce64534aa6102429d2a0a0490e9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
+        <sys_updated_on>2025-06-07 06:09:32</sys_updated_on>
         <value>sys_email</value>
         <variable display_value="Table">80625552c3833300eaac11fe81d3aedc</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
-        <document_key>0150a3d4530e66102429d2a0a0490e20</document_key>
+        <document_key>4bd702a4534aa6102429d2a0a0490ec9</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
-        <sys_id>4550a3d4530e66102429d2a0a0490e21</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-06-07 06:09:32</sys_created_on>
+        <sys_id>91a8ce64534aa6102429d2a0a0490e9d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-06 18:03:35</sys_updated_on>
-        <value>recipients={{step['3c5063d4530e66102429d2a0a0490ecb'].user.email}}^subjectLIKEApproved,Waiting for Allocation^bodyLIKEThe computer you applied for employee has been approved by the IT Support department,^EQ</value>
+        <sys_updated_on>2025-06-07 07:30:58</sys_updated_on>
+        <value>recipients={{step['3c5063d4530e66102429d2a0a0490ecb'].user.email}}^subjectLIKEwas completed^bodyLIKEThe computer application has been completed.^copied=Beth Anglin &lt;beth.anglin@example.com&gt;,IT Support &lt;88578466@qq.com&gt;^state=processed^EQ</value>
         <variable display_value="conditions">7d821952c3833300eaac11fe81d3ae2e</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=0150a3d4530e66102429d2a0a0490e20"/>
+    <sys_element_mapping action="delete_multiple" query="id=4bd702a4534aa6102429d2a0a0490ec9"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>conditions</field>
-        <id>0150a3d4530e66102429d2a0a0490e20</id>
+        <id>4bd702a4534aa6102429d2a0a0490ec9</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
-        <sys_id>8d50a3d4530e66102429d2a0a0490e21</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2025-06-07 06:09:32</sys_created_on>
+        <sys_id>5da8ce64534aa6102429d2a0a0490e9c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-06 18:03:35</sys_updated_on>
+        <sys_updated_on>2025-06-07 07:30:58</sys_updated_on>
         <table>var__m_atf_input_variable_32911152c3833300eaac11fe81d3ae82</table>
-        <value>recipients={{step['3c5063d4530e66102429d2a0a0490ecb'].user.email}}^subjectLIKEApproved,Waiting for Allocation^bodyLIKEThe computer you applied for employee has been approved by the IT Support department,^EQ</value>
+        <value>recipients={{step['3c5063d4530e66102429d2a0a0490ecb'].user.email}}^subjectLIKEwas completed^bodyLIKEThe computer application has been completed.^copied=Beth Anglin &lt;beth.anglin@example.com&gt;,IT Support &lt;88578466@qq.com&gt;^state=processed^EQ</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>
-        <id>0150a3d4530e66102429d2a0a0490e20</id>
+        <id>4bd702a4534aa6102429d2a0a0490ec9</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-07 06:27:06</sys_created_on>
-        <sys_id>66ac4e6c534aa6102429d2a0a0490e54</sys_id>
+        <sys_created_on>2025-06-07 06:09:32</sys_created_on>
+        <sys_id>11a8ce64534aa6102429d2a0a0490e9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 06:27:06</sys_updated_on>
+        <sys_updated_on>2025-06-07 06:09:32</sys_updated_on>
         <table>var__m_atf_input_variable_32911152c3833300eaac11fe81d3ae82</table>
         <value/>
     </sys_element_mapping>
