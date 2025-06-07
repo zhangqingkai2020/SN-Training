@@ -20,12 +20,15 @@
         <published_ref/>
         <script><![CDATA[function onLoad() {
     var url = top.location.href;
+	// 从URL取得 ritm id 参数。
     var ritm_id = new URLSearchParams(url).get("sysparm_ritm_id");
+	// 当URL的 ritm id 不为空时，调用PrefillVariables方法取得，画面上变量的值。
     if (ritm_id) {
         var ga = new GlideAjax('PrefillVariables');
         ga.addParam("sysparm_name", "loadVariablesFromItem");
         ga.addParam("sysparm_ritm_id", ritm_id);
         ga.getXMLAnswer(function(response) {
+			// 将结果设定到画面上。
             var data = JSON.parse(response);
             for (var key in data) {
                 g_form.setValue(key, data[key]);
@@ -39,7 +42,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>53a3fa2b53fd62102429d2a0a0490eac</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>onload</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -47,7 +50,7 @@
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>catalog_script_client_53a3fa2b53fd62102429d2a0a0490eac</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-05 07:39:38</sys_updated_on>
+        <sys_updated_on>2025-06-07 08:15:24</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>

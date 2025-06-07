@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Catalog item 31 New">0fa3762b53fd62102429d2a0a0490e20</cat_item>
+        <cat_item display_value="Catalog item 31">0fa3762b53fd62102429d2a0a0490e20</cat_item>
         <cat_variable/>
         <condition/>
         <description/>
@@ -20,11 +20,16 @@
         <published_ref/>
         <script><![CDATA[function onSubmit() {
     //Type appropriate comment here, and begin script below
+
     var url = top.location.href;
+	// 取得 URL 的ritm id 参数。
     var ritm_id = new URLSearchParams(url).get("sysparm_ritm_id");
+	// 当 URL 的 ritm id 是空时，不是resubmit 数据，
     if (!ritm_id) {
+		// 执行原来的 submit 处理。
         return;
     }
+	// 执行resubmit逻辑处理。
     // 获取页面变量值
     var requested_for = g_form.getValue('requested_for');
     var computer_model = g_form.getValue('computer_model');
@@ -46,7 +51,7 @@
             alert("提交失败：" + response);
         }
     });
-    return false; // 阻止原有Catalog item提交
+    return false; // 阻止原有Catalog item提交处理。
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -54,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>36647e6b53fd62102429d2a0a0490e04</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>resubmit</sys_name>
         <sys_overrides/>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
@@ -62,7 +67,7 @@
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>catalog_script_client_36647e6b53fd62102429d2a0a0490e04</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-05 03:31:27</sys_updated_on>
+        <sys_updated_on>2025-06-07 08:40:43</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
