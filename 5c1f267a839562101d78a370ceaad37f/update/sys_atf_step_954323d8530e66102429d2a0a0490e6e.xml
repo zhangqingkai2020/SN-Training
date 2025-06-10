@@ -3,8 +3,8 @@
         <active>true</active>
         <copied_from/>
         <description>Validate there is at least one record in 'sc_task' matching query:
-Request item = {{Step 6: Record Query.First record}}
-and Assigned to = {{Step 5: Impersonate.User}}
+Request item = {{Step 5: Record Query.First record}}
+and Assigned to = {{Step 7: Impersonate.User}}
 With a failure timeout of 5 Seconds</description>
         <display_name>Record Query</display_name>
         <inputs/>
@@ -17,14 +17,14 @@ With a failure timeout of 5 Seconds</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-06 18:08:54</sys_created_on>
         <sys_id>954323d8530e66102429d2a0a0490e6e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Record Query</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_atf_step_954323d8530e66102429d2a0a0490e6e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 05:04:04</sys_updated_on>
+        <sys_updated_on>2025-06-10 06:03:49</sys_updated_on>
         <table>sc_task</table>
         <test display_value="Test Catalog Item Approve">fc502f94530e66102429d2a0a0490e86</test>
         <timeout>1970-01-01 00:00:05</timeout>

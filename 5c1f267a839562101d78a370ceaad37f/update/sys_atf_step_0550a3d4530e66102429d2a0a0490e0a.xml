@@ -2,7 +2,7 @@
     <sys_atf_step action="INSERT_OR_UPDATE">
         <active>true</active>
         <copied_from display_value="Open an Existing Record">a03adf5c53ca66102429d2a0a0490ee7</copied_from>
-        <description>Open the 'Approval' form with id '{{Step 7: Record Query.First record}}'</description>
+        <description>Open the 'Approval' form with id '{{Step 6: Record Query.First record}}'</description>
         <display_name>Open an Existing Record</display_name>
         <inputs/>
         <inputs/>
@@ -14,14 +14,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-06 17:54:09</sys_created_on>
         <sys_id>0550a3d4530e66102429d2a0a0490e0a</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Open an Existing Record</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_atf_step_0550a3d4530e66102429d2a0a0490e0a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 05:04:04</sys_updated_on>
+        <sys_updated_on>2025-06-10 06:03:49</sys_updated_on>
         <table>sysapproval_approver</table>
         <test display_value="Test Catalog Item Approve">fc502f94530e66102429d2a0a0490e86</test>
         <timeout/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
     <sys_atf_step action="INSERT_OR_UPDATE">
         <active>true</active>
-        <copied_from display_value="Impersonate">fe19f254534a66102429d2a0a0490e47</copied_from>
-        <description>Impersonate the user: IT Support with user Id: it.support
+        <copied_from display_value="Impersonate">13d8f614534a66102429d2a0a0490e69</copied_from>
+        <description>Impersonate the user: manager CatalogItem with user Id: manager.CatalogItem
 
 Warning: Impersonating an existing user may cause unexpected behavior for this test. Avoid potential issues by adding a 'Create a User' step instead&#13;
 See the documentation for Test Design Considerations</description>
@@ -10,40 +10,40 @@ See the documentation for Test Design Considerations</description>
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>7</order>
+        <order>1</order>
         <step_config display_value="Impersonate">071ee5b253331200040729cac2dc348d</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
-        <sys_id>8d5063d4530e66102429d2a0a0490eea</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-06-10 05:53:44</sys_created_on>
+        <sys_id>4bc1656553ca62102429d2a0a0490e7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Impersonate</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
-        <sys_update_name>sys_atf_step_8d5063d4530e66102429d2a0a0490eea</sys_update_name>
+        <sys_update_name>sys_atf_step_4bc1656553ca62102429d2a0a0490e7c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-10 06:03:49</sys_updated_on>
+        <sys_updated_on>2025-06-10 05:53:44</sys_updated_on>
         <table/>
-        <test display_value="Test Catalog Item Approve">fc502f94530e66102429d2a0a0490e86</test>
+        <test display_value="Test Catalog Item Reject back">43c1656553ca62102429d2a0a0490e76</test>
         <timeout/>
         <warning_message>Warning: Impersonating an existing user may cause unexpected behavior for this test. Avoid potential issues by adding a 'Create a User' step instead&#13;
 See the documentation for Test Design Considerations</warning_message>
     </sys_atf_step>
-    <sys_variable_value action="delete_multiple" query="document_key=8d5063d4530e66102429d2a0a0490eea"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4bc1656553ca62102429d2a0a0490e7c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_atf_step</document>
-        <document_key>8d5063d4530e66102429d2a0a0490eea</document_key>
+        <document_key>4bc1656553ca62102429d2a0a0490e7c</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-06 17:54:09</sys_created_on>
-        <sys_id>495063d4530e66102429d2a0a0490eeb</sys_id>
+        <sys_created_on>2025-06-10 05:53:44</sys_created_on>
+        <sys_id>03c1656553ca62102429d2a0a0490e7f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-06 17:54:09</sys_updated_on>
-        <value>ee4ee6f8536122102429d2a0a0490e86</value>
+        <sys_updated_on>2025-06-10 05:53:44</sys_updated_on>
+        <value>ec2bae38536122102429d2a0a0490e4c</value>
         <variable display_value="User">586e2c4253e0220002c6435723dc3415</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_071ee5b253331200040729cac2dc348d^id=8d5063d4530e66102429d2a0a0490eea"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_071ee5b253331200040729cac2dc348d^id=4bc1656553ca62102429d2a0a0490e7c"/>
 </record_update>

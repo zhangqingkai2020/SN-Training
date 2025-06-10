@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="Click a UI Action">f0793960530aa6102429d2a0a0490e7b</copied_from>
+        <description>Click UI action 'Update' on 'Catalog Task' form</description>
+        <display_name>Click a UI Action</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>16</order>
+        <step_config display_value="Click a UI Action">0f4a128297202200abe4bb7503ac4af0</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 06:03:13</sys_created_on>
+        <sys_id>8af36d6953ca62102429d2a0a0490e3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Click a UI Action</sys_name>
+        <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
+        <sys_update_name>sys_atf_step_8af36d6953ca62102429d2a0a0490e3d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-10 06:03:13</sys_updated_on>
+        <table>sc_task</table>
+        <test display_value="Catalog Item Approve copy back">2df3a96953ca62102429d2a0a0490e43</test>
+        <timeout>1970-01-01 00:00:20</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=8af36d6953ca62102429d2a0a0490e3d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8af36d6953ca62102429d2a0a0490e3d</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 06:03:13</sys_created_on>
+        <sys_id>0ef36d6953ca62102429d2a0a0490e3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-10 06:03:13</sys_updated_on>
+        <value>ui_action</value>
+        <variable display_value="Action Type">334ea2f153212110248dddeeff7b1255</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8af36d6953ca62102429d2a0a0490e3d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 06:03:13</sys_created_on>
+        <sys_id>4af36d6953ca62102429d2a0a0490e3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-10 06:03:13</sys_updated_on>
+        <value>standard_ui</value>
+        <variable display_value="Form UI">535cb5ab53233300f06fddeeff7b1247</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8af36d6953ca62102429d2a0a0490e3d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 06:03:13</sys_created_on>
+        <sys_id>82f36d6953ca62102429d2a0a0490e3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-10 06:03:13</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">3eee292353e0220002c6435723dc343c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8af36d6953ca62102429d2a0a0490e3d</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 06:03:13</sys_created_on>
+        <sys_id>86f36d6953ca62102429d2a0a0490e3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-10 06:03:13</sys_updated_on>
+        <value>42df02e20a0a0b340080e61b551f2909</value>
+        <variable display_value="UI action">7c5f6d2353e0220002c6435723dc34f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8af36d6953ca62102429d2a0a0490e3d</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 06:03:13</sys_created_on>
+        <sys_id>c2f36d6953ca62102429d2a0a0490e3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-10 06:03:13</sys_updated_on>
+        <value/>
+        <variable display_value="Assert type">7600f16353e0220002c6435723dc34d5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>8af36d6953ca62102429d2a0a0490e3d</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 06:03:13</sys_created_on>
+        <sys_id>cef36d6953ca62102429d2a0a0490e3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-10 06:03:13</sys_updated_on>
+        <value/>
+        <variable display_value="Declarative Action">51547e3953212110248dddeeff7b126b</variable>
+    </sys_variable_value>
+</record_update>
