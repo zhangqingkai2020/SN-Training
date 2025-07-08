@@ -8,6 +8,7 @@ and Subject contains was completed
 and Body contains The computer application has been completed.
 and Copied = Beth Anglin &lt;beth.anglin@example.com&gt;,IT Support &lt;88578466@qq.com&gt;
 and State = Processed
+and Type in (send-ready, sent)
 With a failure timeout of 60 Seconds</description>
         <display_name>Validate Outbound Email</display_name>
         <inputs/>
@@ -20,14 +21,14 @@ With a failure timeout of 60 Seconds</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-07 06:09:32</sys_created_on>
         <sys_id>4bd702a4534aa6102429d2a0a0490ec9</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Validate Outbound Email</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_atf_step_4bd702a4534aa6102429d2a0a0490ec9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-10 06:15:40</sys_updated_on>
+        <sys_updated_on>2025-06-26 02:09:37</sys_updated_on>
         <table/>
         <test display_value="Test Catalog Item Approve">fc502f94530e66102429d2a0a0490e86</test>
         <timeout>1970-01-01 00:01:00</timeout>
@@ -56,10 +57,10 @@ With a failure timeout of 60 Seconds</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-07 06:09:32</sys_created_on>
         <sys_id>91a8ce64534aa6102429d2a0a0490e9d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 07:30:58</sys_updated_on>
-        <value>recipients={{step['3c5063d4530e66102429d2a0a0490ecb'].user.email}}^subjectLIKEwas completed^bodyLIKEThe computer application has been completed.^copied=Beth Anglin &lt;beth.anglin@example.com&gt;,IT Support &lt;88578466@qq.com&gt;^state=processed^EQ</value>
+        <sys_updated_on>2025-06-26 02:09:37</sys_updated_on>
+        <value>recipients={{step['3c5063d4530e66102429d2a0a0490ecb'].user.email}}^subjectLIKEwas completed^bodyLIKEThe computer application has been completed.^copied=Beth Anglin &lt;beth.anglin@example.com&gt;,IT Support &lt;88578466@qq.com&gt;^state=processed^typeINsend-ready,sent^EQ</value>
         <variable display_value="conditions">7d821952c3833300eaac11fe81d3ae2e</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=4bd702a4534aa6102429d2a0a0490ec9"/>
@@ -69,11 +70,11 @@ With a failure timeout of 60 Seconds</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-07 06:09:32</sys_created_on>
         <sys_id>5da8ce64534aa6102429d2a0a0490e9c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 07:30:58</sys_updated_on>
+        <sys_updated_on>2025-06-26 02:09:37</sys_updated_on>
         <table>var__m_atf_input_variable_32911152c3833300eaac11fe81d3ae82</table>
-        <value>recipients={{step['3c5063d4530e66102429d2a0a0490ecb'].user.email}}^subjectLIKEwas completed^bodyLIKEThe computer application has been completed.^copied=Beth Anglin &lt;beth.anglin@example.com&gt;,IT Support &lt;88578466@qq.com&gt;^state=processed^EQ</value>
+        <value>recipients={{step['3c5063d4530e66102429d2a0a0490ecb'].user.email}}^subjectLIKEwas completed^bodyLIKEThe computer application has been completed.^copied=Beth Anglin &lt;beth.anglin@example.com&gt;,IT Support &lt;88578466@qq.com&gt;^state=processed^typeINsend-ready,sent^EQ</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>

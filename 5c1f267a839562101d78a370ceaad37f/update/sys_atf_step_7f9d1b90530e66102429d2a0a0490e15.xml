@@ -6,6 +6,7 @@
 Recipients = {{Step 1: Impersonate.User.Email}}
 and Subject contains Rejected
 and Body contains The computer you requested is out of stock. Please select another model.
+and Type in (send-ready, sent)
 With a failure timeout of 30 Seconds</description>
         <display_name>Validate Outbound Email</display_name>
         <inputs/>
@@ -18,14 +19,14 @@ With a failure timeout of 30 Seconds</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-06 17:45:55</sys_created_on>
         <sys_id>7f9d1b90530e66102429d2a0a0490e15</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Validate Outbound Email</sys_name>
         <sys_package display_value="SN Training" source="x_1639325_sn_train">5c1f267a839562101d78a370ceaad37f</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Training">5c1f267a839562101d78a370ceaad37f</sys_scope>
         <sys_update_name>sys_atf_step_7f9d1b90530e66102429d2a0a0490e15</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-10 05:54:51</sys_updated_on>
+        <sys_updated_on>2025-06-26 02:07:58</sys_updated_on>
         <table/>
         <test display_value="Test Catalog Item Reject">3fa1fed8530a66102429d2a0a0490eca</test>
         <timeout>1970-01-01 00:00:30</timeout>
@@ -54,10 +55,10 @@ With a failure timeout of 30 Seconds</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-06 17:45:55</sys_created_on>
         <sys_id>d07e1b90530e66102429d2a0a0490e1e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-06 17:51:53</sys_updated_on>
-        <value>recipients={{step['13d8f614534a66102429d2a0a0490e69'].user.email}}^subjectLIKERejected^bodyLIKEThe computer you requested is out of stock. Please select another model.^EQ</value>
+        <sys_updated_on>2025-06-26 02:07:58</sys_updated_on>
+        <value>recipients={{step['13d8f614534a66102429d2a0a0490e69'].user.email}}^subjectLIKERejected^bodyLIKEThe computer you requested is out of stock. Please select another model.^typeINsend-ready,sent^EQ</value>
         <variable display_value="conditions">7d821952c3833300eaac11fe81d3ae2e</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=7f9d1b90530e66102429d2a0a0490e15"/>
@@ -67,11 +68,11 @@ With a failure timeout of 30 Seconds</description>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-06 17:45:55</sys_created_on>
         <sys_id>987e1b90530e66102429d2a0a0490e1d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-06 17:51:53</sys_updated_on>
+        <sys_updated_on>2025-06-26 02:07:58</sys_updated_on>
         <table>var__m_atf_input_variable_32911152c3833300eaac11fe81d3ae82</table>
-        <value>recipients={{step['13d8f614534a66102429d2a0a0490e69'].user.email}}^subjectLIKERejected^bodyLIKEThe computer you requested is out of stock. Please select another model.^EQ</value>
+        <value>recipients={{step['13d8f614534a66102429d2a0a0490e69'].user.email}}^subjectLIKERejected^bodyLIKEThe computer you requested is out of stock. Please select another model.^typeINsend-ready,sent^EQ</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>
